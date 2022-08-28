@@ -1,6 +1,6 @@
 # Title
 
-Usage examples: https://nishidemasami.github.io/honkit_template/
+Usage examples: https://nishidemasami.github.io/sicp-jp-gitbook/
 
 ## Edit Documents
 
