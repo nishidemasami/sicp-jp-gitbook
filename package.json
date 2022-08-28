@@ -1,0 +1,25 @@
+{
+  "name": "document_template",
+  "author": "<your name>",
+  "repository": "git@github.com:<github_user>/<github repo>.git",
+  "version": "1.0.0",
+  "description": "<description>",
+  "main": "index.js",
+  "scripts": {
+    "patch": "cp workaround.js /app/node_modules/gitbook-plugin-mermaid-newface/index.js",
+    "serve": "honkit serve",
+    "build": "honkit build ./ ./_book",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "license": "CC-BY-SA-4.0",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook-plugin-katex-pro": "^0.13.11",
+    "gitbook-plugin-mermaid-newface": "^4.1.0",
+    "gitbook-plugin-search-pro-fixed": "^1.0.1",
+    "honkit": "^3.7.5",
+    "gitbook-plugin-fontsettings": "^2.0.0",
+    "honkit-plugin-i18nsettings": "^1.0.0"
+  }
+}
