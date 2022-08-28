@@ -1,0 +1,8 @@
+.bookignore
+requirements.txt
+Dockerfile
+docker-compose.yml
+.gitignore
+.dockerignore
+node_modules
+dist

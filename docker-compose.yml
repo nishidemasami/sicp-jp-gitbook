@@ -1,0 +1,19 @@
+version: "3.9"
+services:
+  book:
+    tty: true
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      -  .:/app
+      - modules:/app/node_modules
+    command: npx honkit serve
+    working_dir: /app
+volumes:
+  modules:
+    driver: local

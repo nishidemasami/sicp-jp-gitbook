@@ -1,0 +1,14 @@
+{ 
+  "title" : "テンプレート",
+  "language": "ja",
+  "pdf" :{
+    "fontFamily": "IPAGothic",
+    "pageNumbers": true,
+    "fontSize":14
+  },
+  "variables": {},
+  "links":{
+    "sidebar":{
+     }
+  }
+}
