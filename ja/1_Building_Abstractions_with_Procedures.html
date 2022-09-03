@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>Introduction · 計算機プログラムの構造と解釈 第二版</title>
+        <title>1 手続きを用いた抽象化の構築 · 計算機プログラムの構造と解釈 第二版</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SUMMARY.html" />
+    <link rel="next" href="1.1_The_Elements_of_Programming.html" />
     
+    
+    <link rel="prev" href="Acknowledgments.html" />
     
 
     </head>
@@ -88,7 +90,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -218,7 +220,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11" data-path="1_Building_Abstractions_with_Procedures.html">
+        <li class="chapter active" data-level="1.11" data-path="1_Building_Abstractions_with_Procedures.html">
             
                 <a href="1_Building_Abstractions_with_Procedures.html">
             
@@ -2158,7 +2160,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >1 手続きを用いた抽象化の構築</a>
     </h1>
 </div>
 
@@ -2173,52 +2175,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMinYMin meet" viewbox="0 0 740 653" id="svg2" style="display:inline;enable-background:new">
-  <defs id="defs4">
-    <filter x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" id="filter4141">
-      <fecolormatrix values="0" type="saturate" id="feColorMatrix4143">
-    </fecolormatrix></filter>
-  </defs>
-  <metadata id="metadata7">
-  <!--
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  -->
-</metadata>
-  <g id="layer4" style="display:none">
-    <path d="m 20,3 0,850" id="path7396" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 36.211155,202.36211 0,283.66628" transform="translate(0,-199.36211)" id="path7396-4" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 35.714289,769.10039 0,283.66631" transform="translate(0,-199.36211)" id="path7396-4-2" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-  </g>
-  <g transform="translate(0,-199.36211)" id="layer1" style="display:inline">
-    <text x="48.288597" y="500.63922" id="text2985" xml:space="preserve" style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="48.288597" y="500.63922" dx="0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0" id="tspan2987" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:3px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">Structure and Interpretation</tspan><tspan x="48.288597" y="546.83923" dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 -0.5" id="tspan2989" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"><tspan dx="1 0 0 0 -0.5 0 0 0 0 0 -0.5" id="tspan3082" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2.5px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">of Computer Programs</tspan></tspan></text>
-    <text x="276.42462" y="748.46985" id="text4059" xml:space="preserve" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.42462" y="748.46985" dx="-1.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" id="tspan4063" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Harold Abelson and </tspan><tspan x="276.42462" y="783.26984" id="tspan7238" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Gerald Jay Sussman</tspan><tspan x="276.42462" y="818.06982" id="tspan4069" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">with Julie Sussman, </tspan><tspan x="276.42462" y="852.86987" id="tspan7240" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">foreword by Alan <tspan id="tspan7244" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">J. Perlis</tspan></tspan></text>
-    <text x="276.20007" y="663.35364" id="text5884" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.20007" y="663.35364" dx="0 0 0 0 0 0 0 0 0" dy="0 0 0 0 0 0 0 0 0" id="tspan5892" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"><tspan dx="0.5" id="tspan3026" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Unoﬃcial ebook version </tspan><tspan x="276.20007" y="684.47363" dx="1" id="tspan7192" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">2.andresraba6.6</tspan></tspan></text>
-    <text x="276.0762" y="639.08075" id="text5896" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.0762" y="639.08075" dx="0 1 1 1 1 1 0 1 1 1 1 1 1 1" id="tspan5898" style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.79999995px;fill:#a02c2c;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O">second edition</tspan></text>
-  </g>
-  <g transform="translate(0,-199.36211)" id="layer3" style="opacity:0.8;display:inline">
-    <image xlink:href="../html/fig/bookwheel.jpg" id="image7052" height="300.42499" width="206.97501" y="568.92511" x="54.313999">
-  </image></g>
-  <g transform="translate(0,-199.36211)" id="layer2" style="display:none">
-    <path d="m 284,590.36211 0,280" id="path7232" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 490,623.79068 -360,0" id="path7254" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 40,573 0,280" transform="translate(0,199.36211)" id="path7334" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 40,202.36211 0,280" id="path7334-0" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 488.71429,686.98974 -360,0" id="path7254-5" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 523.14285,772.36211 0,279.99999" id="path7334-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 522.71429,856.50497 -360,0" id="path7254-8" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 522.85714,726.64782 -360,0" id="path7254-8-7" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 52,273 0,440" transform="translate(0,199.36211)" id="path7604" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 462.90241,590.12345 0,280" id="path7232-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="M 50,253 0,253" transform="translate(0,199.36211)" id="path3038" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 640,452.36211 -50,0" id="path3038-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-  </g>
-</svg>
+                                <h1 id="1-手続きを用いた抽象化の構築"><span class="chapnum">1</span> 手続きを用いた抽象化の構築</h1>
+<blockquote>
+<p>心が単純な考えについてその力を発揮する活動は、主に次の3つです。1. 単純な考えをひとつの合成物に組み合わせること。すべての複雑な考えはこれによってできています。2. 二番目は、単純なものでも複雑なものでも、二つの考えをひとつの場所に並べて置き、それらをひとつに結合することなしに同時に眺めることです。これによって、心は関係性についての考えを得ることができます。3. 三番目は、その考えの実在に伴うほかのすべての考えから、その考えを切り離すことです。これは抽象化と呼ばれ、これによってすべての一般概念というものはできています。</p>
+<p>---John Locke, <em>An Essay Concerning Human Understanding</em> (1690)</p>
+</blockquote>
+<p>私たちは、<strong>計算プロセス</strong>(<em>computational process</em>)について学ぼうとしています。計算プロセスというのは抽象的な存在で、コンピュータの中に生息しています。それらが進化するにつれ、プロセスは<strong>データ</strong>(<em>data</em>)と呼ばれるまた別の抽象物を操作します。プロセスの進化は、<strong>プログラム</strong>(<em>program</em>)と呼ばれる規則のパターンによって指揮されています。プログラムを作るのは、プロセスを指揮するためです。事実上、私たちは呪文を使ってコンピュータの精霊に魔法をかけているのです。</p>
+<p>計算プロセスは、魔法使いの言葉で言うと、精霊のようなものです。それは、見たり触れたりすることはできません。そもそも、物質によって作られていないのです。それでも、それはとてもリアルな存在です。計算プロセスは、知的な作業を行うことができます。質問に答えることができます。銀行のお金を支出したり、工場でロボットの腕を操作したりすることで、世界に影響を与えることもできます。私たちがプロセスに魔法をかけるのに使うプログラムとは、魔法使いの呪文のようなものです。それは難解で深遠な<strong>プログラミング言語</strong>(<em>programming language</em>)による記号的表現によって慎重に組み立てられ、プロセスに実行させたいタスクを指示します。</p>
+<p>計算プロセスは、正しく動くコンピュータでは、プログラムを正確かつ精密に実行します。そのため、魔法使いの見習いのように、初心者プログラマは魔法のもたらす結果を理解し、予測することを学ばなければいけません。プログラムのほんの小さな間違い(普通、<strong>バグ</strong>(<em>bug</em>)や<strong>グリッチ</strong>(<em>glitch</em>)と呼ばれます)も、複雑な予期しない結果を引き起こすことがあるのです。</p>
+<p>運のいいことに、プログラムを学ぶことは魔法を学ぶことに比べるとずっと安全です。私たちが扱う精霊は、都合のいいことに安全な方法で封じ込まれているからです。しかし、現実世界のプログラミングでは、注意力や専門知識や知恵が必要となります。例えば、CAD(コンピュータによる設計支援)プログラムの小さなバグが、飛行機やダムの破滅的な崩壊を引き起こしたり、産業ロボットの自己破壊を起こしたりするのです。</p>
+<p>達人ソフトウェアエンジニアは、プログラムを構築する能力があり、結果となるプロセスが意図するタスクを実行してくれることにある程度自信を持つことができます。彼らは、システムの動作を前もって思い描くことができます。プログラムを構造化して、予期しない問題が破滅的な結果を引き起こさないようにする方法を知っています。そして、問題が起こってしまったときには、プログラムを<strong>デバッグ</strong>(<em>debug</em>)できます。うまく設計されたコンピュータシステムは、うまく設計された自動車や原子炉のように、モジュール化して設計されていて、部品が別々に作成、置き換え、デバッグできるようになっています。</p>
+<h2 id="lispプログラミング">Lispプログラミング</h2>
+<p>プロセスを記述するのには、適切な言語が必要です。この目的のために、私たちはプログラミング言語Lispを使うことにします。私たちの日々の考えが普通自然言語(英語やフランス語や日本語など)によって表現されるように、そして定量的な現象の記述が数学的記法によって表現されるように、私たちの手続き的な思考はLispによって表現されます。Lispは1950年代の後半に、<strong>再帰方程式</strong>(<em>recursion equation</em>)と呼ばれるある種の論理表現についての推論を定式化するものとして発明されたものです。この言語はJohn McCarthyにより考え出され、彼の論文“記号式の再帰方程式とそれらの機械による演算”(<a href="References.html#McCarthy-1960">McCarthy 1960</a>)に基づいています。</p>
+<p>数学的な定式化としての生まれにもかかわらず、Lispは実用的なプログラミング言語です。Lisp<strong>インタプリタ</strong>(<em>interpreter</em>)はLisp言語によって記述されたプロセスを実行する機械です。最初のLispインタプリタは、<abbr title="MIT">MIT</abbr>研究所の人工知能部門の同僚、学生に手伝ってもらいながら、McCarthyが実装したものです。<sup><a href="#fn_1" id="reffn_1">1</a></sup>Lispという名前はLISt Processing(リスト処理)の頭文字で、この言語は記号微分や代数式の積分のようなプログラミング上の問題に取り組むための記号操作能力を提供するために設計されたものです。この目的のために、アトムとリストとして知られる新しいデータオブジェクトを導入しています。この特徴が、Lispがその時代のほかの言語から際立ったものとなっている最大の特徴です。</p>
+<p>Lispは、一致協力した設計の努力によってできたものではありません。ユーザーの必要とすることや実用的な実装の検討事項に応えるものとして、実験的なやり方で非公式に進化してきたものです。Lispの非公式な進化は何年も続き、Lispユーザーのコミュニティは伝統的に、この言語の“公式な”定義を公布しようとすることに抵抗してきました。この進化が言語の柔軟性と元々のエレガントさと組み合わさって、広く使われている言語としては二番目に古い(これより古いのはFortranだけです)言語であるLispはずっと適応を続け、プログラム設計についての最新の考え方を含むようになっています。そのため、今ではLispは方言の集まりで、元々の特徴の多くを共通して持ちながらも、それぞれ大きく違うこともあるものとなっています。この本で使う方言はSchemeと呼ばれるものです。<sup><a href="#fn_2" id="reffn_2">2</a></sup></p>
+<p>実験的な性質を持ち、また記号操作に重点を置いているため、初期のLispは数値計算については、非常に非効率的なものでした。少なくとも、Fortranと比べるとそうでした。しかし、年を経るにつれ、プログラムを機械語に変換して、十分効率的に数値計算を実行できるようにするLispコンパイラが開発されるようになりました。それに、特別な応用に対しては、Lispは非常に有効に使われています。<sup><a href="#fn_3" id="reffn_3">3</a></sup>今でもLispは、絶望的に非効率的だという昔からの評判を乗り越えられていませんが、今ではLispは効率が最優先事項ではない数多くの応用に使われています。例えば、LispはOSのシェル言語や、エディタやCADシステムの拡張言語として選ばれるものになっています。</p>
+<p>Lispがメインストリームの言語でないとしたら、なぜそれをプログラミングの考察のための枠組みとして使うのでしょうか。それは、この言語が独特な特徴を持っているため、プログラミングの重要な構成とデータ構造について学び、それらを支える言語的特性と結びつけるのにとても便利な媒体だからです。これらの特性の中でも最も意義深いものは、プロセスのLispによる記述(これは<strong>手続き</strong>(<em>procedure</em>)と呼ばれます)が、それ自身Lispのデータとして表され、操作できるということです。これが重要なのは、“受動的な”データと“能動的な”プロセスという伝統的な区別を曖昧にする能力を使った強力なプログラム設計のテクニックが存在するからです。これから見ていくように、Lispは手続きをデータとして扱う柔軟性のおかげで、これらのテクニックを探求するのに最も便利な言語のひとつになっています。手続きをデータとして表現する能力は、コンピュータ言語を支えるインタプリタやコンパイラのような、ほかのプログラムをデータとして操作しなければならないプログラムを書くのにも、Lispをとても優れたものにしています。それに、こういったことを考えに入れなくても、Lispでのプログラミングは本当に楽しいのです。</p>
+<hr>
+<blockquote id="fn_1">
+<sup>1</sup>. <em>Lisp 1 Programmer&apos;s Manual</em>は1960年に登場し、<em>Lisp 1.5 Programmer&apos;s Manual</em> (<a href="References.html#McCarthy-et-al-1965">McCarthy et al. 1965</a>)は1962年に出版されました。Lispの初期の歴史は、<a href="References.html#McCarthy-1978">McCarthy 1978</a>で説明されています。<a href="#reffn_1" title="Jump back to footnote [1] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_2">
+<sup>2</sup>. 1970年代に主要なLispプログラムの大部分に用いられた2つの方言は、<abbr title="MIT">MIT</abbr>のプロジェクト<abbr title="MAC">MAC</abbr>で開発されたMacLisp (<a href="References.html#Moon-1978">Moon 1978</a>; <a href="References.html#Pitman-1983">Pitman 1983</a>)と、Bolt Beranek and Newman Inc.とXerox Palo Alto研究センターで開発されたInterlisp (<a href="References.html#Teitelman-1974">Teitelman 1974</a>)でした。Portable Standard Lisp (<a href="References.html#Hearn-1969">Hearn 1969</a>;<a href="References.html#Griss-1981">Griss 1981</a>)、異なるマシンの間で簡単に移植できるように設計されたLisp方言です。MacLispは、カリフォルニア大学バークレー校で開発されたFranz Lispや、<abbr title="MIT">MIT</abbr>人工知能研究所がLispをとても効率よく実行できるよう設計した特定目的プロセッサ(処理器)に基づくZetalisp (<a href="References.html#Moon-and-Weinreb-1981">Moon and Weinreb 1981</a>)といった、いくつかの下位方言を生みました。この本で使用するLisp方言はSheme(<a href="References.html#Steele-and-Sussman-1975">Steele and Sussman 1975</a>)と呼ばれ、1975年に<abbr title="MIT">MIT</abbr>人工知能研究所のGuy Lewis Steele Jr.とGerald Jay Sussmanにより開発され、のちに<abbr title="MIT">MIT</abbr>で教育目的で再実装されたものです。Common Lisp方言(<a href="References.html#Steele-1982">Steele 1982</a>, <a href="References.html#Steele-1990">Steele 1990</a>)は、初期のLisp方言の機能を組み合わせ、Lispの業界標準を作るためにLispコミュニティにより開発されました。Common Lispは1994年に<abbr title="ANSI">ANSI</abbr>標準(<a href="References.html#ANSI-1994">ANSI 1994</a>)になりました。<a href="#reffn_2" title="Jump back to footnote [2] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_3">
+<sup>3</sup>. そのような特別な応用のひとつは、自然科学的に重要な計算のブレークスルー---太陽系の運動についての積分の精度を二桁近く上げ、太陽系の力学はカオス的であることを示した---でした。この計算は、新しい積分アルゴリズム、専用コンパイラ、そして専用コンピュータによるものですが、これらはすべてLispによって書かれたソフトウェアツールの助けによって実装されたものです。(<a href="References.html#Abelson-et-al.-1992">Abelson et al. 1992</a>; <a href="References.html#Sussman-and-Wisdom-1992">Sussman and Wisdom 1992</a>)<a href="#reffn_3" title="Jump back to footnote [3] in the text."> ↩</a>
+</blockquote>
 
                                 
                                 </section>
@@ -2246,8 +2228,12 @@
 
             
                 
+                <a href="Acknowledgments.html" class="navigation navigation-prev " aria-label="Previous page: 謝辞">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="SUMMARY.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 目次">
+                
+                <a href="1.1_The_Elements_of_Programming.html" class="navigation navigation-next " aria-label="Next page: 1.1 プログラミングの要素">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2258,7 +2244,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"目次","level":"1.2","depth":1,"path":"SUMMARY.md","ref":"SUMMARY.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ハル・アベルソン、ジェラルド・ジェイ・サスマン、ジュリー・サスマン著 -- 真鍋宏史訳","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"IPAGothic","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"計算機プログラムの構造と解釈 第二版","language":"ja","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"README.md","mtime":"2022-09-03T20:36:35.090Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-03T20:36:52.040Z"},"basePath":".","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"1 手続きを用いた抽象化の構築","level":"1.11","depth":1,"next":{"title":"1.1 プログラミングの要素","level":"1.11.1","depth":2,"path":"1.1_The_Elements_of_Programming.md","ref":"1.1_The_Elements_of_Programming.md","articles":[{"title":"1.1.1 式","level":"1.11.1.1","depth":3,"path":"1.1.1_Expressions.md","ref":"1.1.1_Expressions.md","articles":[]},{"title":"1.1.2 命名と環境","level":"1.11.1.2","depth":3,"path":"1.1.2_Naming_and_the_Environment.md","ref":"1.1.2_Naming_and_the_Environment.md","articles":[]},{"title":"1.1.3 組み合わせの評価","level":"1.11.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},{"title":"1.1.4 複合手続き","level":"1.11.1.4","depth":3,"path":"1.1.4_Compound_Procedures.md","ref":"1.1.4_Compound_Procedures.md","articles":[]},{"title":"1.1.5 手続き適用の置換モデル","level":"1.11.1.5","depth":3,"path":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","articles":[]},{"title":"1.1.6 条件式と述語","level":"1.11.1.6","depth":3,"path":"1.1.6_Conditional_Expressions_and_Predicates.md","ref":"1.1.6_Conditional_Expressions_and_Predicates.md","articles":[]},{"title":"1.1.7 例: ニュートン法による平方根","level":"1.11.1.7","depth":3,"path":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","ref":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","articles":[]},{"title":"1.1.8 ブラックボックス抽象化としての手続き","level":"1.11.1.8","depth":3,"path":"1.1.8_Procedures_as_Black_Box_Abstractions.md","ref":"1.1.8_Procedures_as_Black_Box_Abstractions.md","articles":[]}]},"previous":{"title":"謝辞","level":"1.10","depth":1,"path":"Acknowledgments.md","ref":"Acknowledgments.md","articles":[]},"articles":[{"title":"1.1 プログラミングの要素","level":"1.11.1","depth":2,"path":"1.1_The_Elements_of_Programming.md","ref":"1.1_The_Elements_of_Programming.md","articles":[{"title":"1.1.1 式","level":"1.11.1.1","depth":3,"path":"1.1.1_Expressions.md","ref":"1.1.1_Expressions.md","articles":[]},{"title":"1.1.2 命名と環境","level":"1.11.1.2","depth":3,"path":"1.1.2_Naming_and_the_Environment.md","ref":"1.1.2_Naming_and_the_Environment.md","articles":[]},{"title":"1.1.3 組み合わせの評価","level":"1.11.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},{"title":"1.1.4 複合手続き","level":"1.11.1.4","depth":3,"path":"1.1.4_Compound_Procedures.md","ref":"1.1.4_Compound_Procedures.md","articles":[]},{"title":"1.1.5 手続き適用の置換モデル","level":"1.11.1.5","depth":3,"path":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","articles":[]},{"title":"1.1.6 条件式と述語","level":"1.11.1.6","depth":3,"path":"1.1.6_Conditional_Expressions_and_Predicates.md","ref":"1.1.6_Conditional_Expressions_and_Predicates.md","articles":[]},{"title":"1.1.7 例: ニュートン法による平方根","level":"1.11.1.7","depth":3,"path":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","ref":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","articles":[]},{"title":"1.1.8 ブラックボックス抽象化としての手続き","level":"1.11.1.8","depth":3,"path":"1.1.8_Procedures_as_Black_Box_Abstractions.md","ref":"1.1.8_Procedures_as_Black_Box_Abstractions.md","articles":[]}]},{"title":"1.2 手続きとそれが生成するプロセス","level":"1.11.2","depth":2,"path":"1.2_Procedures_and_the_Processes_They_Generate.md","ref":"1.2_Procedures_and_the_Processes_They_Generate.md","articles":[{"title":"1.2.1 線形再帰と反復","level":"1.11.2.1","depth":3,"path":"1.2.1_Linear_Recursion_and_Iteration.md","ref":"1.2.1_Linear_Recursion_and_Iteration.md","articles":[]},{"title":"1.2.2 木の再帰","level":"1.11.2.2","depth":3,"path":"1.2.2_Tree_Recursion.md","ref":"1.2.2_Tree_Recursion.md","articles":[]},{"title":"1.2.3 増加オーダー","level":"1.11.2.3","depth":3,"path":"1.2.3_Orders_of_Growth.md","ref":"1.2.3_Orders_of_Growth.md","articles":[]},{"title":"1.2.4 指数計算","level":"1.11.2.4","depth":3,"path":"1.2.4_Exponentiation.md","ref":"1.2.4_Exponentiation.md","articles":[]},{"title":"1.2.5 最大公約数","level":"1.11.2.5","depth":3,"path":"1.2.5_Greatest_Common_Divisors.md","ref":"1.2.5_Greatest_Common_Divisors.md","articles":[]},{"title":"1.2.6 例: 素数判定","level":"1.11.2.6","depth":3,"path":"1.2.6_Example_Testing_for_Primality.md","ref":"1.2.6_Example_Testing_for_Primality.md","articles":[]}]},{"title":"1.3 高階手続きによる抽象の定式化","level":"1.11.3","depth":2,"path":"1.3_Formulating_Abstractions_with_Higher_Order_Procedures.md","ref":"1.3_Formulating_Abstractions_with_Higher_Order_Procedures.md","articles":[{"title":"1.3.1 引数としての手続き","level":"1.11.3.1","depth":3,"path":"1.3.1_Procedures_as_Arguments.md","ref":"1.3.1_Procedures_as_Arguments.md","articles":[]},{"title":"1.3.2 \\code{lambda}を使って手続きを構築する","level":"1.11.3.2","depth":3,"path":"1.3.2_Constructing_Procedures_Using_lambda.md","ref":"1.3.2_Constructing_Procedures_Using_lambda.md","articles":[]},{"title":"1.3.3 汎用手法としての手続き","level":"1.11.3.3","depth":3,"path":"1.3.3_Procedures_as_General_Methods.md","ref":"1.3.3_Procedures_as_General_Methods.md","articles":[]},{"title":"1.3.4 返り値としての手続き","level":"1.11.3.4","depth":3,"path":"1.3.4_Procedures_as_Returned_Values.md","ref":"1.3.4_Procedures_as_Returned_Values.md","articles":[]}]}],"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ハル・アベルソン、ジェラルド・ジェイ・サスマン、ジュリー・サスマン著 -- 真鍋宏史訳","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"IPAGothic","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"計算機プログラムの構造と解釈 第二版","language":"ja","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"1_Building_Abstractions_with_Procedures.md","mtime":"2022-09-03T20:36:35.090Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-03T20:36:52.040Z"},"basePath":".","book":{"language":"ja"}});
         });
     </script>
 </div>

@@ -3,7 +3,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>Introduction · Structure and Interpretation of Computer Programs　Second Edition</title>
+        <title>1.1.1 Expressions · Structure and Interpretation of Computer Programs　Second Edition</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -56,8 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="SUMMARY.html" />
+    <link rel="next" href="1.1.2_Naming_and_the_Environment.md" />
     
+    
+    <link rel="prev" href="1.1_The_Elements_of_Programming.html" />
     
 
     </head>
@@ -88,7 +90,7 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="./">
             
                 <a href="./">
             
@@ -220,7 +222,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.9.1.1" data-path="1.1.1_Expressions.html">
+        <li class="chapter active" data-level="1.9.1.1" data-path="1.1.1_Expressions.html">
             
                 <a href="1.1.1_Expressions.html">
             
@@ -2132,7 +2134,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >1.1.1 Expressions</a>
     </h1>
 </div>
 
@@ -2147,52 +2149,109 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveaspectratio="xMinYMin meet" viewbox="0 0 740 653" id="svg2" style="display:inline;enable-background:new">
-  <defs id="defs4">
-    <filter x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" id="filter4141">
-      <fecolormatrix values="0" type="saturate" id="feColorMatrix4143">
-    </fecolormatrix></filter>
-  </defs>
-  <metadata id="metadata7">
-  <!--
-    <rdf:RDF>
-      <cc:Work rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  -->
-</metadata>
-  <g id="layer4" style="display:none">
-    <path d="m 20,3 0,850" id="path7396" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 36.211155,202.36211 0,283.66628" transform="translate(0,-199.36211)" id="path7396-4" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 35.714289,769.10039 0,283.66631" transform="translate(0,-199.36211)" id="path7396-4-2" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-  </g>
-  <g transform="translate(0,-199.36211)" id="layer1" style="display:inline">
-    <text x="48.288597" y="500.63922" id="text2985" xml:space="preserve" style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="48.288597" y="500.63922" dx="0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0" id="tspan2987" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:3px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">Structure and Interpretation</tspan><tspan x="48.288597" y="546.83923" dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 -0.5" id="tspan2989" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"><tspan dx="1 0 0 0 -0.5 0 0 0 0 0 -0.5" id="tspan3082" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2.5px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">of Computer Programs</tspan></tspan></text>
-    <text x="276.42462" y="748.46985" id="text4059" xml:space="preserve" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.42462" y="748.46985" dx="-1.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" id="tspan4063" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Harold Abelson and </tspan><tspan x="276.42462" y="783.26984" id="tspan7238" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Gerald Jay Sussman</tspan><tspan x="276.42462" y="818.06982" id="tspan4069" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">with Julie Sussman, </tspan><tspan x="276.42462" y="852.86987" id="tspan7240" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">foreword by Alan <tspan id="tspan7244" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">J. Perlis</tspan></tspan></text>
-    <text x="276.20007" y="663.35364" id="text5884" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.20007" y="663.35364" dx="0 0 0 0 0 0 0 0 0" dy="0 0 0 0 0 0 0 0 0" id="tspan5892" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"><tspan dx="0.5" id="tspan3026" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Unoﬃcial ebook version </tspan><tspan x="276.20007" y="684.47363" dx="1" id="tspan7192" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">2.andresraba6.6</tspan></tspan></text>
-    <text x="276.0762" y="639.08075" id="text5896" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.0762" y="639.08075" dx="0 1 1 1 1 1 0 1 1 1 1 1 1 1" id="tspan5898" style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.79999995px;fill:#a02c2c;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O">second edition</tspan></text>
-  </g>
-  <g transform="translate(0,-199.36211)" id="layer3" style="opacity:0.8;display:inline">
-    <image xlink:href="../html/fig/bookwheel.jpg" id="image7052" height="300.42499" width="206.97501" y="568.92511" x="54.313999">
-  </image></g>
-  <g transform="translate(0,-199.36211)" id="layer2" style="display:none">
-    <path d="m 284,590.36211 0,280" id="path7232" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 490,623.79068 -360,0" id="path7254" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 40,573 0,280" transform="translate(0,199.36211)" id="path7334" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 40,202.36211 0,280" id="path7334-0" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 488.71429,686.98974 -360,0" id="path7254-5" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 523.14285,772.36211 0,279.99999" id="path7334-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 522.71429,856.50497 -360,0" id="path7254-8" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 522.85714,726.64782 -360,0" id="path7254-8-7" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 52,273 0,440" transform="translate(0,199.36211)" id="path7604" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 462.90241,590.12345 0,280" id="path7232-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="M 50,253 0,253" transform="translate(0,199.36211)" id="path3038" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-    <path d="m 640,452.36211 -50,0" id="path3038-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
-  </g>
-</svg>
+                                <h3 id="111-expressions"><span class="chapnum">1.1.1</span> Expressions</h3>
+<p>One easy way to get started at programming is to examine some typical
+interactions with an interpreter for the Scheme dialect of Lisp.  Imagine that
+you are sitting at a computer terminal.  You type an <em>expression</em>, and
+the interpreter responds by displaying the result of its <em>evaluating</em>
+that expression.</p>
+<p>One kind of primitive expression you might type is a number.  (More precisely,
+the expression that you type consists of the numerals that represent the number
+in base 10.)  If you present Lisp with a number</p>
+<pre><code class="lang-scheme">486
+</code></pre>
+<p>the interpreter will respond by printing<sup><a href="#fn_5" id="reffn_5">5</a></sup></p>
+<pre><code class="lang-scheme"><i>486</i>
+</code></pre>
+<p>Expressions representing numbers may be combined with an expression
+representing a primitive procedure (such as <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">+</mtext></mrow><annotation encoding="application/x-tex">\texttt{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5305em;"></span><span class="mord text"><span class="mord texttt">+</span></span></span></span></span> or <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">*</mtext></mrow><annotation encoding="application/x-tex">\texttt{*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5208em;"></span><span class="mord text"><span class="mord texttt">*</span></span></span></span></span>) to form a
+compound expression that represents the application of the procedure to those
+numbers.  For example:</p>
+<pre><code class="lang-scheme">(+ 137 349)
+<i>486</i>
+</code></pre>
+<pre><code class="lang-scheme">(- 1000 334)
+<i>666</i>
+</code></pre>
+<pre><code class="lang-scheme">(* 5 99)
+<i>495</i>
+</code></pre>
+<pre><code class="lang-scheme">(/ 10 5)
+<i>2</i>
+</code></pre>
+<pre><code class="lang-scheme">(+ 2.7 10)
+<i>12.7</i>
+</code></pre>
+<p>Expressions such as these, formed by delimiting a list of expressions within
+parentheses in order to denote procedure application, are called
+<em>combinations</em>.  The leftmost element in the list is called the
+<em>operator</em>, and the other elements are called <em>operands</em>.  The
+value of a combination is obtained by applying the procedure specified by the
+operator to the <em>arguments</em> that are the values of the operands.</p>
+<p>The convention of placing the operator to the left of the operands is known as
+<em>prefix notation</em>, and it may be somewhat confusing at first because it
+departs significantly from the customary mathematical convention.  Prefix
+notation has several advantages, however.  One of them is that it can
+accommodate procedures that may take an arbitrary number of arguments, as in
+the following examples:</p>
+<pre><code class="lang-scheme">(+ 21 35 12 7)
+<i>75</i>
+</code></pre>
+<pre><code class="lang-scheme">(* 25 4 12)
+<i>1200</i>
+</code></pre>
+<p>No ambiguity can arise, because the operator is always the leftmost element and
+the entire combination is delimited by the parentheses.</p>
+<p>A second advantage of prefix notation is that it extends in a straightforward
+way to allow combinations to be <em>nested</em>, that is, to have combinations whose
+elements are themselves combinations:</p>
+<pre><code class="lang-scheme">(+ (* 3 5) (- 10 6))
+<i>19</i>
+</code></pre>
+<p>There is no limit (in principle) to the depth of such nesting and to the
+overall complexity of the expressions that the Lisp interpreter can evaluate.
+It is we humans who get confused by still relatively simple expressions such as</p>
+<pre><code class="lang-scheme">(+ (* 3 (+ (* 2 4) (+ 3 5))) (+ (- 10 7) 6))
+</code></pre>
+<p>which the interpreter would readily evaluate to be 57.  We can help ourselves
+by writing such an expression in the form</p>
+<pre><code class="lang-scheme">(+ (* 3
+      (+ (* 2 4)
+         (+ 3 5)))
+   (+ (- 10 7)
+      6))
+</code></pre>
+<p>following a formatting convention known as <em>pretty-printing</em>, in which
+each long combination is written so that the operands are aligned vertically.
+The resulting indentations display clearly the structure of the
+expression.<sup><a href="#fn_6" id="reffn_6">6</a></sup></p>
+<p>Even with complex expressions, the interpreter always operates in the same
+basic cycle: It reads an expression from the terminal, evaluates the
+expression, and prints the result.  This mode of operation is often expressed
+by saying that the interpreter runs in a <em>read-eval-print loop</em>.
+Observe in particular that it is not necessary to explicitly instruct the
+interpreter to print the value of the expression.<sup><a href="#fn_7" id="reffn_7">7</a></sup></p>
+<hr>
+<blockquote id="fn_5">
+<sup>5</sup>. Throughout this book, when<a href="#reffn_5" title="Jump back to footnote [5] in the text."> ↩</a>
+</blockquote>
+<p>we wish to emphasize the distinction between the input typed by the user and
+the response printed by the interpreter, we will show the latter in slanted
+characters.</p>
+<blockquote id="fn_6">
+<sup>6</sup>. Lisp systems typically provide features to aid the user in<a href="#reffn_6" title="Jump back to footnote [6] in the text."> ↩</a>
+</blockquote>
+<p>formatting expressions.  Two especially useful features are one that
+automatically indents to the proper pretty-print position whenever a new line
+is started and one that highlights the matching left parenthesis whenever a
+right parenthesis is typed.</p>
+<blockquote id="fn_7">
+<sup>7</sup>. Lisp obeys the<a href="#reffn_7" title="Jump back to footnote [7] in the text."> ↩</a>
+</blockquote>
+<p>convention that every expression has a value. This convention, together with
+the old reputation of Lisp as an inefficient language, is the source of the
+quip by Alan Perlis (paraphrasing Oscar Wilde) that “Lisp programmers know the
+value of everything but the cost of nothing.”</p>
 
                                 
                                 </section>
@@ -2220,8 +2279,12 @@
 
             
                 
+                <a href="1.1_The_Elements_of_Programming.html" class="navigation navigation-prev " aria-label="Previous page: 1.1 The Elements of Programming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="SUMMARY.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Contents">
+                
+                <a href="1.1.2_Naming_and_the_Environment.md" class="navigation navigation-next " aria-label="Next page: 1.1.2 Naming and the Environment">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2232,7 +2295,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Contents","level":"1.2","depth":1,"path":"SUMMARY.md","ref":"SUMMARY.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Harold Abelson, Gerald Jay Sussman, Julie Sussman","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Structure and Interpretation of Computer Programs　Second Edition","language":"en","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"README.md","mtime":"2022-09-03T20:36:35.090Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-03T20:36:52.040Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"1.1.1 Expressions","level":"1.9.1.1","depth":3,"next":{"title":"1.1.2 Naming and the Environment","level":"1.9.1.2","depth":3,"path":"1.1.2_Naming_and_the_Environment.md","ref":"1.1.2_Naming_and_the_Environment.md","articles":[]},"previous":{"title":"1.1 The Elements of Programming","level":"1.9.1","depth":2,"path":"1.1_The_Elements_of_Programming.md","ref":"1.1_The_Elements_of_Programming.md","articles":[{"title":"1.1.1 Expressions","level":"1.9.1.1","depth":3,"path":"1.1.1_Expressions.md","ref":"1.1.1_Expressions.md","articles":[]},{"title":"1.1.2 Naming and the Environment","level":"1.9.1.2","depth":3,"path":"1.1.2_Naming_and_the_Environment.md","ref":"1.1.2_Naming_and_the_Environment.md","articles":[]},{"title":"1.1.3 Evaluating Combinations","level":"1.9.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},{"title":"1.1.4 Compound Procedures","level":"1.9.1.4","depth":3,"path":"1.1.4_Compound_Procedures.md","ref":"1.1.4_Compound_Procedures.md","articles":[]},{"title":"1.1.5 The Substitution Model for Procedure Application","level":"1.9.1.5","depth":3,"path":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","articles":[]},{"title":"1.1.6 Conditional Expressions and Predicates","level":"1.9.1.6","depth":3,"path":"1.1.6_Conditional_Expressions_and_Predicates.md","ref":"1.1.6_Conditional_Expressions_and_Predicates.md","articles":[]},{"title":"1.1.7 Example: Square Roots by Newton’s Method","level":"1.9.1.7","depth":3,"path":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","ref":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","articles":[]},{"title":"1.1.8 Procedures as Black-Box Abstractions","level":"1.9.1.8","depth":3,"path":"1.1.8_Procedures_as_Black_Box_Abstractions.md","ref":"1.1.8_Procedures_as_Black_Box_Abstractions.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Harold Abelson, Gerald Jay Sussman, Julie Sussman","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Structure and Interpretation of Computer Programs　Second Edition","language":"en","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"1.1.1_Expressions.md","mtime":"2022-09-03T20:36:35.086Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-03T20:36:52.040Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>
