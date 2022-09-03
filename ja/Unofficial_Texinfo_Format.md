@@ -4,11 +4,11 @@
 
 あなたはきっと、これをEmacsのInfoモードのようなInfoハイパーテキストブラウザで読んでいるのでしょう。もしかすると、$\LaTeX$で組版されたものを画面上で、または印刷して読んでいるのかもしれませんね。もっとも、それは間抜けなことだと思いますが。それに、印刷するにはだいぶお金がかかりますよね。
 
-<abbr title="HyperText Markup Language">HTML</abbr>-<abbr title="Graphics Interchange Format">GIF</abbr>版は公式に無料で公開されているのですが、それを初めてUnofficial Texinfo Format(非公式Texinfo版、<abbr title="UTF">UTF</abbr>)の初版としてLytha Aythが個人的に変換したのは、2001年4月の長いEmacs Lovefest Weekendの間のことでした。
+<abbr title="HyperText Markup Language">HTML</abbr>-<abbr title="Graphics Interchange Format">GIF</abbr>版は公式に無料で公開されているのですが、それを初めてUnofficial Texinfo Format(非公式Texinfo版、<abbr title="Unofficial Texinfo Format">UTF</abbr>)の初版としてLytha Aythが個人的に変換したのは、2001年4月の長いEmacs Lovefest Weekendの間のことでした。
 
-<abbr title="Unicode Transformation Format">UTF</abbr>は<abbr title="HyperText Markup Language">HTML</abbr>版よりも検索が簡単です。また、あまりよくないコンピュータ(例えば寄付された386マシンのようなもの)を使っている人にとってもアクセスしやすいでしょう。
+<abbr title="Unofficial Texinfo Format">UTF</abbr>は<abbr title="HyperText Markup Language">HTML</abbr>版よりも検索が簡単です。また、あまりよくないコンピュータ(例えば寄付された386マシンのようなもの)を使っている人にとってもアクセスしやすいでしょう。
 386マシンは、理論的には、Linux、Emacs、Schemeインタプリタを同時に実行できます。
-しかし、多くの386マシンでは、Netscapeとそれに必要なX Window Systemの両方を動かそうとすると、まだ始めたてでお金もない若いハッカーに**スラッシング**(_thrashing_)という概念を早い段階から教えるはめになるのがオチです。それに、<abbr title="Unicode Transformation Format">UTF</abbr>版なら圧縮なしで1.44<abbr title="megabyte">MB</abbr>のフロッピーディスクに収まりますので、インターネットや<abbr title="Local Area Network">LAN</abbr>への接続環境のないPCに
+しかし、多くの386マシンでは、Netscapeとそれに必要なX Window Systemの両方を動かそうとすると、まだ始めたてでお金もない若いハッカーに**スラッシング**(_thrashing_)という概念を早い段階から教えるはめになるのがオチです。それに、<abbr title="Unofficial Texinfo Format">UTF</abbr>版なら圧縮なしで1.44<abbr title="megabyte">MB</abbr>のフロッピーディスクに収まりますので、インターネットや<abbr title="Local Area Network">LAN</abbr>への接続環境のないPCに
 インストールするのにも便利です。
 
 Texinfoへの変換は、可能な範囲で直接的な翻字をしました。$\TeX$から<abbr title="HyperText Markup Language">HTML</abbr>への変換のように、これによってある程度内容が損なわれてしまいました。非公式TexInfo形式では、図はいにしえの技術であるアスキーアートによって不格好に復活させられることになりました。
@@ -26,8 +26,8 @@ _Peath, Lytha Ayth_
 **付録:**AbelsonとSussmanによる<abbr title="Structure and Interpretation of Computer Programs">SICP</abbr>のビデオレクチャーもご覧ください。
 [<abbr title="Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory">MIT CSAIL</abbr>](http://groups.csail.mit.edu/mac/classes/6.001/abelson-sussman-lectures/), [<abbr title="Massachusetts Institute of Technology OpenCourseWare">MIT OCW</abbr>](http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/video-lectures/).
 
-**付録2:**上記は2001年の元の<abbr title="Unicode Transformation Format">UTF</abbr>の紹介です。
-10年後のいま、<abbr title="Unicode Transformation Format">UTF</abbr>は一変しました。数学上の記号と式は適切に組版され、図はベクターグラフィックにより描かれています。元のテキスト形式とアスキーアートの図は今でもTexinfoのソースに残っていますが、表示されるのはInfo形式にコンパイルした場合だけです。
+**付録2:**上記は2001年の元の<abbr title="Unofficial Texinfo Format">UTF</abbr>の紹介です。
+10年後のいま、<abbr title="Unofficial Texinfo Format">UTF</abbr>は一変しました。数学上の記号と式は適切に組版され、図はベクターグラフィックにより描かれています。元のテキスト形式とアスキーアートの図は今でもTexinfoのソースに残っていますが、表示されるのはInfo形式にコンパイルした場合だけです。
 電子書籍リーダーとタブレットの夜明け時代になって、画面上で<abbr title="Portable Document Format">PDF</abbr>を読むことは、もはや馬鹿馬鹿しいことではないとはっきり言えるようになりました。
 楽しんでください！
 
