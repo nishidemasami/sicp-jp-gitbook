@@ -1,0 +1,31 @@
+h1 .chapnum {
+    line-height: 0.8em;
+    font-weight: normal;
+    font-size: 6.7em;
+    color: #aeaece;
+    height: 1ex;
+    margin-top: 0;
+    margin-bottom: 0.5ex;
+    float: left;
+}
+h1 + * {
+    clear: both;
+}
+
+h2 .chapnum ,h3 .chapnum ,h4 .chapnum {
+    color: #aeaece;
+}
+h1 ~ p:first-of-type:first-letter,h2 ~ p:first-of-type:first-letter,h3 ~ p:first-of-type:first-letter,h4 ~ p:first-of-type:first-letter {
+    float: left;
+    margin-top: 0.33rem;
+    margin-right: 0.04em;
+    margin-bottom: -0.15em;
+    margin-left: -0.15ex;
+    padding-left: 0;
+    line-height: 0.83em;
+    font-family: "Linux Libertine O", serif;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 5rem;
+    color: #9090c0;
+}

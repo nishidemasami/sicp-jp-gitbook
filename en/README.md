@@ -1,143 +1,46 @@
-# Summary
-
-* [Contents](SUMMARY.md)
-* [Unofficial Texinfo Format](Unofficial_Texinfo_Format.md)
-* [Dedication](Dedication.md)
-* [Foreword](Foreword.md)
-* [Preface to the Second Edition](Preface_to_the_Second_Edition.md)
-* [Preface to the First Edition](Preface_to_the_First_Edition.md)
-* [Acknowledgments](Acknowledgments.md)
-* [1 Building Abstractions with Procedures](Building_Abstractions_with_Procedures.md)
-  * [1.1 The Elements of Programming](The_Elements_of_Programming.md)
-    * [1.1.1 Expressions](Expressions.md)
-    * [1.1.2 Naming and the Environment](Naming_and_the_Environment.md)
-    * [1.1.3 Evaluating Combinations](Evaluating_Combinations.md)
-    * [1.1.4 Compound Procedures](Compound_Procedures.md)
-    * [1.1.5 The Substitution Model for Procedure Application](The_Substitution_Model_for_Procedure_Application.md)
-    * [1.1.6 Conditional Expressions and Predicates](Conditional_Expressions_and_Predicates.md)
-    * [1.1.7 Example: Square Roots by Newton’s Method](Example_Square_Roots_by_Newtons_Method.md)
-    * [1.1.8 Procedures as Black-Box Abstractions](Procedures_as_Black_Box_Abstractions.md)
-  * [1.2 Procedures and the Processes They Generate](Procedures_and_the_Processes_They_Generate.md)
-    * [1.2.1 Linear Recursion and Iteration](Linear_Recursion_and_Iteration.md)
-    * [1.2.2 Tree Recursion](Tree_Recursion.md)
-    * [1.2.3 Orders of Growth](Orders_of_Growth.md)
-    * [1.2.4 Exponentiation](Exponentiation.md)
-    * [1.2.5 Greatest Common Divisors](Greatest_Common_Divisors.md)
-    * [1.2.6 Example: Testing for Primality](Example_Testing_for_Primality.md)
-  * [1.3 Formulating Abstractions with Higher-Order Procedures](Formulating_Abstractions_with_Higher_Order_Procedures.md)
-    * [1.3.1 Procedures as Arguments](Procedures_as_Arguments.md)
-    * [1.3.2 Constructing Procedures Using lambda](Constructing_Procedures_Using_lambda.md)
-    * [1.3.3 Procedures as General Methods](Procedures_as_General_Methods.md)
-    * [1.3.4 Procedures as Returned Values](Procedures_as_Returned_Values.md)
-* [2 Building Abstractions with Data](Building_Abstractions_with_Data.md)
-  * [2.1 Introduction to Data Abstraction](Introduction_to_Data_Abstraction.md)
-    * [2.1.1 Example: Arithmetic Operations for Rational Numbers](Example_Arithmetic_Operations_for_Rational_Numbers.md)
-    * [2.1.2 Abstraction Barriers](Abstraction_Barriers.md)
-    * [2.1.3 What Is Meant by Data?](What_Is_Meant_by_Data.md)
-    * [2.1.4 Extended Exercise: Interval Arithmetic](Extended_Exercise_Interval_Arithmetic.md)
-  * [2.2 Hierarchical Data and the Closure Property](Hierarchical_Data_and_the_Closure_Property.md)
-    * [2.2.1 Representing Sequences](Representing_Sequences.md)
-    * [2.2.2 Hierarchical Structures](Hierarchical_Structures.md)
-    * [2.2.3 Sequences as Conventional Interfaces](Sequences_as_Conventional_Interfaces.md)
-    * [2.2.4 Example: A Picture Language](Example_A_Picture_Language.md)
-  * [2.3 Symbolic Data](Symbolic_Data.md)
-    * [2.3.1 Quotation](Quotation.md)
-    * [2.3.2 Example: Symbolic Differentiation](Example_Symbolic_Differentiation.md)
-    * [2.3.3 Example: Representing Sets](Example_Representing_Sets.md)
-    * [2.3.4 Example: Huffman Encoding Trees](Example_Huffman_Encoding_Trees.md)
-  * [2.4 Multiple Representations for Abstract Data](Multiple_Representations_for_Abstract_Data.md)
-    * [2.4.1 Representations for Complex Numbers](Representations_for_Complex_Numbers.md)
-    * [2.4.2 Tagged data](Tagged_data.md)
-    * [2.4.3 Data-Directed Programming and Additivity](Data_Directed_Programming_and_Additivity.md)
-  * [2.5 Systems with Generic Operations](Systems_with_Generic_Operations.md)
-    * [2.5.1 Generic Arithmetic Operations](Generic_Arithmetic_Operations.md)
-    * [2.5.2 Combining Data of Different Types](Combining_Data_of_Different_Types.md)
-    * [2.5.3 Example: Symbolic Algebra](Example_Symbolic_Algebra.md)
-* [3 Modularity, Objects, and State](Modularity_Objects_and_State.md)
-  * [3.1 Assignment and Local State](Assignment_and_Local_State.md)
-    * [3.1.1 Local State Variables](Local_State_Variables.md)
-    * [3.1.2 The Benefits of Introducing Assignment](The_Benefits_of_Introducing_Assignment.md)
-    * [3.1.3 The Costs of Introducing Assignment](The_Costs_of_Introducing_Assignment.md)
-  * [3.2 The Environment Model of Evaluation](The_Environment_Model_of_Evaluation.md)
-    * [3.2.1 The Rules for Evaluation](The_Rules_for_Evaluation.md)
-    * [3.2.2 Applying Simple Procedures](Applying_Simple_Procedures.md)
-    * [3.2.3 Frames as the Repository of Local State](Frames_as_the_Repository_of_Local_State.md)
-    * [3.2.4 Internal Definitions](Internal_Definitions.md)
-  * [3.3 Modeling with Mutable Data](Modeling_with_Mutable_Data.md)
-    * [3.3.1 Mutable List Structure](Mutable_List_Structure.md)
-    * [3.3.2 Representing Queues](Representing_Queues.md)
-    * [3.3.3 Representing Tables](Representing_Tables.md)
-    * [3.3.4 A Simulator for Digital Circuits](A_Simulator_for_Digital_Circuits.md)
-    * [3.3.5 Propagation of Constraints](Propagation_of_Constraints.md)
-  * [3.4 Concurrency: Time Is of the Essence](Concurrency_Time_Is_of_the_Essence.md)
-    * [3.4.1 The Nature of Time in Concurrent Systems](The_Nature_of_Time_in_Concurrent_Systems.md)
-    * [3.4.2 Mechanisms for Controlling Concurrency](Mechanisms_for_Controlling_Concurrency.md)
-  * [3.5 Streams](Streams.md)
-    * [3.5.1 Streams Are Delayed Lists](Streams_Are_Delayed_Lists.md)
-    * [3.5.2 Infinite Streams](Infinite_Streams.md)
-    * [3.5.3 Exploiting the Stream Paradigm](Exploiting_the_Stream_Paradigm.md)
-    * [3.5.4 Streams and Delayed Evaluation](Streams_and_Delayed_Evaluation.md)
-    * [3.5.5 Modularity of Functional Programs and Modularity of Objects](Modularity_of_Functional_Programs_and_Modularity_of_Objects.md)
-* [4 Metalinguistic Abstraction](Metalinguistic_Abstraction.md)
-  * [4.1 The Metacircular Evaluator](The_Metacircular_Evaluator.md)
-    * [4.1.1 The Core of the Evaluator](The_Core_of_the_Evaluator.md)
-    * [4.1.2 Representing Expressions](Representing_Expressions.md)
-    * [4.1.3 Evaluator Data Structures](Evaluator_Data_Structures.md)
-    * [4.1.4 Running the Evaluator as a Program](Running_the_Evaluator_as_a_Program.md)
-    * [4.1.5 Data as Programs](Data_as_Programs.md)
-    * [4.1.6 Internal Definitions](Internal_Definitions.md)
-    * [4.1.7 Separating Syntactic Analysis from Execution](Separating_Syntactic_Analysis_from_Execution.md)
-  * [4.2 Variations on a Scheme — Lazy Evaluation](Variations_on_a_Scheme_Lazy_Evaluation.md)
-    * [4.2.1 Normal Order and Applicative Order](Normal_Order_and_Applicative_Order.md)
-    * [4.2.2 An Interpreter with Lazy Evaluation](An_Interpreter_with_Lazy_Evaluation.md)
-    * [4.2.3 Streams as Lazy Lists](Streams_as_Lazy_Lists.md)
-  * [4.3 Variations on a Scheme — Nondeterministic Computing](Variations_on_a_Scheme_Nondeterministic_Computing.md)
-    * [4.3.1 Amb and Search](Amb_and_Search.md)
-    * [4.3.2 Examples of Nondeterministic Programs](Examples_of_Nondeterministic_Programs.md)
-    * [4.3.3 Implementing the amb Evaluator](Implementing_the_amb_Evaluator.md)
-  * [4.4 Logic Programming](Logic_Programming.md)
-    * [4.4.1 Deductive Information Retrieval](Deductive_Information_Retrieval.md)
-    * [4.4.2 How the Query System Works](How_the_Query_System_Works.md)
-    * [4.4.3 Is Logic Programming Mathematical Logic?](Is_Logic_Programming_Mathematical_Logic.md)
-    * [4.4.4 Implementing the Query System](Implementing_the_Query_System.md)
-      * [4.4.4.1 The Driver Loop and Instantiation](The_Driver_Loop_and_Instantiation.md)
-      * [4.4.4.2 The Evaluator](The_Evaluator.md)
-      * [4.4.4.3 Finding Assertions by Pattern Matching](Finding_Assertions_by_Pattern_Matching.md)
-      * [4.4.4.4 Rules and Unification](Rules_and_Unification.md)
-      * [4.4.4.5 Maintaining the Data Base](Maintaining_the_Data_Base.md)
-      * [4.4.4.6 Stream Operations](Stream_Operations.md)
-      * [4.4.4.7 Query Syntax Procedures](Query_Syntax_Procedures.md)
-      * [4.4.4.8 Frames and Bindings](Frames_and_Bindings.md)
-* [5 Computing with Register Machines](Computing_with_Register_Machines.md)
-  * [5.1 Designing Register Machines](Designing_Register_Machines.md)
-    * [5.1.1 A Language for Describing Register Machines](A_Language_for_Describing_Register_Machines.md)
-    * [5.1.2 Abstraction in Machine Design](Abstraction_in_Machine_Design.md)
-    * [5.1.3 Subroutines](Subroutines.md)
-    * [5.1.4 Using a Stack to Implement Recursion](Using_a_Stack_to_Implement_Recursion.md)
-    * [5.1.5 Instruction Summary](Instruction_Summary.md)
-  * [5.2 A Register-Machine Simulator](A_Register_Machine_Simulator.md)
-    * [5.2.1 The Machine Model](The_Machine_Model.md)
-    * [5.2.2 The Assembler](The_Assembler.md)
-    * [5.2.3 Generating Execution Procedures for Instructions](Generating_Execution_Procedures_for_Instructions.md)
-    * [5.2.4 Monitoring Machine Performance](Monitoring_Machine_Performance.md)
-  * [5.3 Storage Allocation and Garbage Collection](Storage_Allocation_and_Garbage_Collection.md)
-    * [5.3.1 Memory as Vectors](Memory_as_Vectors.md)
-    * [5.3.2 Maintaining the Illusion of Infinite Memory](Maintaining_the_Illusion_of_Infinite_Memory.md)
-  * [5.4 The Explicit-Control Evaluator](The_Explicit_Control_Evaluator.md)
-    * [5.4.1 The Core of the Explicit-Control Evaluator](The_Core_of_the_Explicit_Control_Evaluator.md)
-    * [5.4.2 Sequence Evaluation and Tail Recursion](Sequence_Evaluation_and_Tail_Recursion.md)
-    * [5.4.3 Conditionals, Assignments, and Definitions](Conditionals_Assignments_and_Definitions.md)
-    * [5.4.4 Running the Evaluator](Running_the_Evaluator.md)
-  * [5.5 Compilation](Compilation.md)
-    * [5.5.1 Structure of the Compiler](Structure_of_the_Compiler.md)
-    * [5.5.2 Compiling Expressions](Compiling_Expressions.md)
-    * [5.5.3 Compiling Combinations](Compiling_Combinations.md)
-    * [5.5.4 Combining Instruction Sequences](Combining_Instruction_Sequences.md)
-    * [5.5.5 An Example of Compiled Code](An_Example_of_Compiled_Code.md)
-    * [5.5.6 Lexical Addressing](Lexical_Addressing.md)
-    * [5.5.7 Interfacing Compiled Code to the Evaluator](Interfacing_Compiled_Code_to_the_Evaluator.md)
-* [References](References.md)
-* [List of Exercises](List_of_Exercises.md)
-* [List of Figures](List_of_Figures.md)
-* [Index](Index.md)
-* [Colophon](Colophon.md)
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" preserveAspectRatio="xMinYMin meet" viewBox="0 0 740 653" id="svg2" style="display:inline;enable-background:new">
+  <defs id="defs4">
+    <filter x="0" y="0" width="1" height="1" color-interpolation-filters="sRGB" id="filter4141">
+      <feColorMatrix values="0" type="saturate" id="feColorMatrix4143"/>
+    </filter>
+  </defs>
+  <metadata id="metadata7">
+  <!--
+    <rdf:RDF>
+      <cc:Work rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  -->
+</metadata>
+  <g id="layer4" style="display:none">
+    <path d="m 20,3 0,850" id="path7396" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 36.211155,202.36211 0,283.66628" transform="translate(0,-199.36211)" id="path7396-4" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 35.714289,769.10039 0,283.66631" transform="translate(0,-199.36211)" id="path7396-4-2" style="fill:none;stroke:#000000;stroke-width:0.76005882px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+  </g>
+  <g transform="translate(0,-199.36211)" id="layer1" style="display:inline">
+    <text x="48.288597" y="500.63922" id="text2985" xml:space="preserve" style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="48.288597" y="500.63922" dx="0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 0 0 0 0 0" id="tspan2987" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:3px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">Structure and Interpretation</tspan><tspan x="48.288597" y="546.83923" dx="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.5 0 0 -0.5" id="tspan2989" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold"><tspan dx="1 0 0 0 -0.5 0 0 0 0 0 -0.5" id="tspan3082" style="font-size:42px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:110.00000238%;word-spacing:2.5px;fill:#000000;fill-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O Bold">of Computer Programs</tspan></text>
+    <text x="276.42462" y="748.46985" id="text4059" xml:space="preserve" style="font-size:24px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.42462" y="748.46985" dx="-1.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0" id="tspan4063" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Harold Abelson and </tspan><tspan x="276.42462" y="783.26984" id="tspan7238" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Gerald Jay Sussman</tspan><tspan x="276.42462" y="818.06982" id="tspan4069" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">with Julie Sussman, </tspan><tspan x="276.42462" y="852.86987" id="tspan7240" style="font-size:29px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:2px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">foreword by Alan <tspan id="tspan7244" style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">J. Perlis</tspan></text>
+    <text x="276.20007" y="663.35364" id="text5884" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:120.00000477%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.20007" y="663.35364" dx="0 0 0 0 0 0 0 0 0" dy="0 0 0 0 0 0 0 0 0" id="tspan5892" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O"><tspan dx="0.5" id="tspan3026" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">Unoﬃcial ebook version </tspan><tspan x="276.20007" y="684.47363" dx="1" id="tspan7192" style="font-size:17.60000038px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:120.00000477%;word-spacing:1.29999995px;fill:#000000;fill-opacity:1;font-family:Linux Libertine O;-inkscape-font-specification:Linux Libertine O">2.andresraba6.6</tspan></text>
+    <text x="276.0762" y="639.08075" id="text5896" xml:space="preserve" style="font-size:26px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Alegreya;-inkscape-font-specification:Alegreya"><tspan x="276.0762" y="639.08075" dx="0 1 1 1 1 1 0 1 1 1 1 1 1 1" id="tspan5898" style="font-size:25px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;word-spacing:1.79999995px;fill:#a02c2c;fill-opacity:1;font-family:Linux Libertine Capitals O;-inkscape-font-specification:Linux Libertine Capitals O">second edition</tspan></text>
+  </g>
+  <g transform="translate(0,-199.36211)" id="layer3" style="opacity:0.8;display:inline">
+    <image xlink:href="../html/fig/bookwheel.jpg" id="image7052" height="300.42499" width="206.97501" y="568.92511" x="54.313999"/>
+  </g>
+  <g transform="translate(0,-199.36211)" id="layer2" style="display:none">
+    <path d="m 284,590.36211 0,280" id="path7232" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 490,623.79068 -360,0" id="path7254" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 40,573 0,280" transform="translate(0,199.36211)" id="path7334" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 40,202.36211 0,280" id="path7334-0" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 488.71429,686.98974 -360,0" id="path7254-5" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 523.14285,772.36211 0,279.99999" id="path7334-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 522.71429,856.50497 -360,0" id="path7254-8" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 522.85714,726.64782 -360,0" id="path7254-8-7" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 52,273 0,440" transform="translate(0,199.36211)" id="path7604" style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 462.90241,590.12345 0,280" id="path7232-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="M 50,253 0,253" transform="translate(0,199.36211)" id="path3038" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+    <path d="m 640,452.36211 -50,0" id="path3038-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
+  </g>
+</svg>

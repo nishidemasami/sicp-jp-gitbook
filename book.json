@@ -29,5 +29,8 @@
   "links":{
     "sidebar":{
      }
+  },
+  "styles": {
+      "website": "styles/website.css"
   }
 }
