@@ -4,7 +4,7 @@
 
 <a id="Allen-1978"></a>**Allen**, John.  1978.  _Anatomy of Lisp_. New York: McGraw-Hill.
 
-<a id="ANSI-1994"></a><abbr title="ANSI">**ANSI**</abbr> <abbr title="X">X</abbr>3.226-1994. \textit{American National Standard for InformationSys\-tems---Programming Language---Common Lisp}.
+<a id="ANSI-1994"></a><abbr title="ANSI">**ANSI**</abbr> <abbr title="X">X</abbr>3.226-1994. _American National Standard for InformationSystems---Programming Language---Common Lisp_.
 
 <a id="Appel-1987"></a>**Appel**, Andrew W.  1987.  Garbage collection can be faster than stackallocation.  _Information Processing Letters_ 25(4): 275-279.[–›](https://www.cs.princeton.edu/~appel/papers/45.ps)
 
@@ -14,7 +14,7 @@
 
 <a id="Batali-et-al-1982"></a>**Batali**, John, Neil Mayle, Howard Shrobe, Gerald Jay Sussman, and Daniel Weise.1982.  The Scheme-81 architecture---System and chip.  In _Proceedings ofthe <abbr title="MIT">MIT</abbr> Conference on Advanced Research in <abbr title="VLSI">VLSI</abbr>_, edited byPaul Penfield, Jr. Dedham, <abbr title="MA">MA</abbr>: Artech House.
 
-<a id="Borning-(1977)"></a>**Borning**, Alan.  1977.  ThingLab---An object-oriented system for buildingsimulations using constraints. In _Proceedings of the 5th InternationalJoint Conference on Artificial Intelligence_.\href{http://ijcai.org/Past\%20Proceedings/IJCAI-77-VOL1/PDF/085.pdf}{–›}
+<a id="Borning-(1977)"></a>**Borning**, Alan.  1977.  ThingLab---An object-oriented system for buildingsimulations using constraints. In _Proceedings of the 5th InternationalJoint Conference on Artificial Intelligence_.[–›](http://ijcai.org/Past%20Proceedings/IJCAI-77-VOL1/PDF/085.pdf)
 
 <a id="Borodin-and-Munro-(1975)"></a>**Borodin**, Alan, and Ian Munro.  1975.  _The Computational Complexity ofAlgebraic and Numeric Problems_. New York: American Elsevier.
 
@@ -104,7 +104,7 @@
 
 <a id="Hodges-1983"></a>**Hodges**, Andrew. 1983.  _Alan Turing: The Enigma_. New York: Simon andSchuster.
 
-<a id="Hofstadter-1979"></a>**Hofstadter**, Douglas R.  1979.  \textit{G\"odel, Escher, Bach: An Eternal GoldenBraid}. New York: Basic Books.
+<a id="Hofstadter-1979"></a>**Hofstadter**, Douglas R.  1979.  _Gödel, Escher, Bach: An Eternal GoldenBraid_. New York: Basic Books.
 
 <a id="Hughes-1990"></a>**Hughes**, R. J. M.  1990.  Why functional programming matters.  In _ResearchTopics in Functional Programming_, edited by David Turner.  Reading, <abbr title="MA">MA</abbr>:Addison-Wesley, pp. 17-42.[–›](http://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)
 
@@ -122,9 +122,9 @@
 
 <a id="Konopasek-and-Jayaraman-1984"></a>**Konopasek**, Milos, and Sundaresan Jayaraman.  1984.  _The TK!Solver Book: AGuide to Problem-Solving in Science, Engineering, Business, andEducation_. Berkeley, <abbr title="CA">CA</abbr>: Osborne/McGraw-Hill.
 
-<a id="Kowalski-(1973;-1979)"></a>**Kowalski**, Robert.  1973.  Predicate logic as a programming language.  Technicalreport 70, Department of Computational Logic, School of ArtificialIntelligence, University of Edinburgh.\href{http://www.doc.ic.ac.uk/~rak/papers/IFIP\%2074.pdf}{–›}
+<a id="Kowalski-(1973;-1979)"></a>**Kowalski**, Robert.  1973.  Predicate logic as a programming language.  Technicalreport 70, Department of Computational Logic, School of ArtificialIntelligence, University of Edinburgh.[–›](http://www.doc.ic.ac.uk/~rak/papers/IFIP%2074.pdf)
 
-<a id="Kowalski"></a>**Kowalski**, Robert.  1979.  _Logic for Problem Solving_. New York:North-Holland.\href{http://www.doc.ic.ac.uk/\%7Erak/papers/LogicForProblemSolving.pdf}{–›}
+<a id="Kowalski"></a>**Kowalski**, Robert.  1979.  _Logic for Problem Solving_. New York:North-Holland.[–›](http://www.doc.ic.ac.uk/~rak/papers/LogicForProblemSolving.pdf)
 
 <a id="Lamport-(1978)"></a>**Lamport**, Leslie. 1978.  Time, clocks, and the ordering of events in adistributed system.  _Communications of the <abbr title="ACM">ACM</abbr>_ 21(7): 558-565.[–›](http://research.microsoft.com/en-us/um/people/lamport/pubs/time-clocks.pdf)
 
@@ -146,7 +146,7 @@
 
 <a id="McCarthy-1978"></a>**McCarthy**, John.  1978.  The history of Lisp.  In _Proceedings of the<abbr title="ACM">ACM</abbr> <abbr title="SIGPLAN">SIGPLAN</abbr> Conference on the History of ProgrammingLanguages_.[–›](http://www-formal.stanford.edu/jmc/history/lisp/lisp.html)
 
-<a id="McCarthy-et-al-1965"></a>**McCarthy**, John, P. W. Abrahams, D. J. Edwards, T. P. Hart, and M. I.  Levin.1965.  _Lisp 1.5 Programmer's Manual_.  2nd edition.  Cambridge, <abbr title="MA">MA</abbr>:<abbr title="MIT">MIT</abbr> Press.\href{http://www.softwarepreservation.org/projects/LISP/book/LISP\%201.5\%20Programmers\%20Manual.pdf/view}{–›}
+<a id="McCarthy-et-al-1965"></a>**McCarthy**, John, P. W. Abrahams, D. J. Edwards, T. P. Hart, and M. I.  Levin.1965.  _Lisp 1.5 Programmer's Manual_.  2nd edition.  Cambridge, <abbr title="MA">MA</abbr>:<abbr title="MIT">MIT</abbr> Press.[–›](https://www.softwarepreservation.org/projects/LISP/book/LISP%201.5%20Programmers%20Manual.pdf/view)
 
 <a id="McDermott-and-Sussman-(1972)"></a>**McDermott**, Drew, and Gerald Jay Sussman.  1972. Conniver reference manual.Memo 259, <abbr title="MIT">MIT</abbr> Artificial Intelligence Laboratory.[–›](http://dspace.mit.edu/handle/1721.1/6203)
 
