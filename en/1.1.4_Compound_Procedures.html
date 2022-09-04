@@ -3,7 +3,7 @@
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-        <title>Acknowledgments · Structure and Interpretation of Computer Programs　Second Edition</title>
+        <title>1.1.4 Compound Procedures · Structure and Interpretation of Computer Programs　Second Edition</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1_Building_Abstractions_with_Procedures.html" />
+    <link rel="next" href="1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md" />
     
     
-    <link rel="prev" href="Preface_to_the_First_Edition.html" />
+    <link rel="prev" href="1.1.3_Evaluating_Combinations.html" />
     
 
     </head>
@@ -181,7 +181,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="Acknowledgments.html">
+        <li class="chapter " data-level="1.8" data-path="Acknowledgments.html">
             
                 <a href="Acknowledgments.html">
             
@@ -261,7 +261,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.1.4" data-path="1.1.4_Compound_Procedures.html">
+        <li class="chapter active" data-level="1.9.1.4" data-path="1.1.4_Compound_Procedures.html">
             
                 <a href="1.1.4_Compound_Procedures.html">
             
@@ -2134,7 +2134,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Acknowledgments</a>
+        <a href="." >1.1.4 Compound Procedures</a>
     </h1>
 </div>
 
@@ -2149,98 +2149,86 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="acknowledgments">Acknowledgments</h1>
-<p>We would like to thank the many people who have helped us develop this book and
-this curriculum.</p>
-<p>Our subject is a clear intellectual descendant of “6.231,” a wonderful
-subject on programming linguistics and the λ-calculus taught at
-<abbr title="MIT">MIT</abbr> in the late 1960s by Jack Wozencraft and Arthur Evans, Jr.</p>
-<p>We owe a great debt to Robert Fano, who reorganized <abbr title="MIT">MIT</abbr>&apos;s
-introductory curriculum in electrical engineering and computer science to
-emphasize the principles of engineering design.  He led us in starting out on
-this enterprise and wrote the first set of subject notes from which this book
-evolved.</p>
-<p>Much of the style and aesthetics of programming that we try to teach were
-developed in conjunction with Guy Lewis Steele Jr., who collaborated with
-Gerald Jay Sussman in the initial development of the Scheme language.  In
-addition, David Turner, Peter Henderson, Dan Friedman, David Wise, and Will
-Clinger have taught us many of the techniques of the functional programming
-community that appear in this book.</p>
-<p>Joel Moses taught us about structuring large systems.  His experience with the
-Macsyma system for symbolic computation provided the insight that one should
-avoid complexities of control and concentrate on organizing the data to reflect
-the real structure of the world being modeled.</p>
-<p>Marvin Minsky and Seymour Papert formed many of our attitudes about programming
-and its place in our intellectual lives.  To them we owe the understanding that
-computation provides a means of expression for exploring ideas that would
-otherwise be too complex to deal with precisely.  They emphasize that a
-student&apos;s ability to write and modify programs provides a powerful medium in
-which exploring becomes a natural activity.</p>
-<p>We also strongly agree with Alan Perlis that programming is lots of fun and we
-had better be careful to support the joy of programming.  Part of this joy
-derives from observing great masters at work.  We are fortunate to have been
-apprentice programmers at the feet of Bill Gosper and Richard Greenblatt.</p>
-<p>It is difficult to identify all the people who have contributed to the
-development of our curriculum.  We thank all the lecturers, recitation
-instructors, and tutors who have worked with us over the past fifteen years and
-put in many extra hours on our subject, especially Bill Siebert, Albert Meyer,
-Joe Stoy, Randy Davis, Louis Braida, Eric Grimson, Rod Brooks, Lynn Stein and
-Peter Szolovits.  We would like to specially acknowledge the outstanding
-teaching contributions of Franklyn Turbak, now at Wellesley; his work in
-undergraduate instruction set a standard that we can all aspire to.  We are
-grateful to Jerry Saltzer and Jim Miller for helping us grapple with the
-mysteries of concurrency, and to Peter Szolovits and David McAllester for their
-contributions to the exposition of nondeterministic evaluation in <a href="Metalinguistic_Abstraction.md">Chapter 4</a>.</p>
-<p>Many people have put in significant effort presenting this material at other
-universities.  Some of the people we have worked closely with are Jacob
-Katzenelson at the Technion, Hardy Mayer at the University of California at
-Irvine, Joe Stoy at Oxford, Elisha Sacks at Purdue, and Jan Komorowski at the
-Norwegian University of Science and Technology.  We are exceptionally proud of
-our colleagues who have received major teaching awards for their adaptations of
-this subject at other universities, including Kenneth Yip at Yale, Brian Harvey
-at the University of California at Berkeley, and Dan Huttenlocher at Cornell.</p>
-<p>Al Moyé arranged for us to teach this material to engineers at
-Hewlett-Packard, and for the production of videotapes of these lectures.  We
-would like to thank the talented instructors---in particular Jim Miller, Bill
-Siebert, and Mike Eisenberg---who have designed continuing education courses
-incorporating these tapes and taught them at universities and industry all over
-the world.</p>
-<p>Many educators in other countries have put in significant work translating the
-first edition.  Michel Briand, Pierre Chamard, and André Pic produced a
-French edition; Susanne Daniels-Herold produced a German edition; and Fumio
-Motoyoshi produced a Japanese edition.  We do not know who produced the Chinese
-edition, but we consider it an honor to have been selected as the subject of an
-“unauthorized” translation.</p>
-<p>It is hard to enumerate all the people who have made technical contributions to
-the development of the Scheme systems we use for instructional purposes.  In
-addition to Guy Steele, principal wizards have included Chris Hanson, Joe
-Bowbeer, Jim Miller, Guillermo Rozas, and Stephen Adams.  Others who have put
-in significant time are Richard Stallman, Alan Bawden, Kent Pitman, Jon Taft,
-Neil Mayle, John Lamping, Gwyn Osnos, Tracy Larrabee, George Carrette, Soma
-Chaudhuri, Bill Chiarchiaro, Steven Kirsch, Leigh Klotz, Wayne Noss, Todd Cass,
-Patrick O&apos;Donnell, Kevin Theobald, Daniel Weise, Kenneth Sinclair, Anthony
-Courtemanche, Henry M. Wu, Andrew Berlin, and Ruth Shyu.</p>
-<p>Beyond the <abbr title="MIT">MIT</abbr> implementation, we would like to thank the many people
-who worked on the <abbr title="IEEE">IEEE</abbr> Scheme standard, including William Clinger and
-Jonathan Rees, who edited the R⁴RS, and Chris Haynes, David Bartley,
-Chris Hanson, and Jim Miller, who prepared the <abbr title="IEEE">IEEE</abbr> standard.</p>
-<p>Dan Friedman has been a long-time leader of the Scheme community.  The
-community&apos;s broader work goes beyond issues of language design to encompass
-significant educational innovations, such as the high-school curriculum based
-on EdScheme by Schemer&apos;s Inc., and the wonderful books by Mike Eisenberg and by
-Brian Harvey and Matthew Wright.</p>
-<p>We appreciate the work of those who contributed to making this a real book,
-especially Terry Ehling, Larry Cohen, and Paul Bethge at the <abbr title="MIT">MIT</abbr>
-Press.  Ella Mazel found the wonderful cover image.  For the second edition we
-are particularly grateful to Bernard and Ella Mazel for help with the book
-design, and to David Jones, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>e</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">TeX</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.07847em;">X</span></span></span></span> wizard extraordinaire.  We also are indebted
-to those readers who made penetrating comments on the new draft: Jacob
-Katzenelson, Hardy Mayer, Jim Miller, and especially Brian Harvey, who did unto
-this book as Julie did unto his book <em>Simply Scheme</em>.</p>
-<p>Finally, we would like to acknowledge the support of the organizations that
-have encouraged this work over the years, including support from
-Hewlett-Packard, made possible by Ira Goldstein and Joel Birnbaum, and support
-from <abbr title="DARPA">DARPA</abbr>, made possible by Bob Kahn.</p>
+                                <h3 id="114-compound-procedures"><span class="chapnum">1.1.4</span> Compound Procedures</h3>
+<p>We have identified in Lisp some of the elements that must appear in any
+powerful programming language:</p>
+<ul>
+<li>Numbers and arithmetic operations are primitive data and procedures.</li>
+<li>Nesting of combinations provides a means of combining operations.</li>
+<li>Definitions that associate names with values provide a limited means of
+abstraction.</li>
+</ul>
+<p>Now we will learn about <em>procedure definitions</em>, a much more powerful
+abstraction technique by which a compound operation can be given a name and
+then referred to as a unit.</p>
+<p>We begin by examining how to express the idea of “squaring.”  We might say,
+“To square something, multiply it by itself.”  This is expressed in our
+language as</p>
+<pre><code class="lang-scheme">(define (square x) (* x x))
+</code></pre>
+<p>We can understand this in the following way:</p>
+<pre><code class="lang-scheme">(define (square    x)         (*      x         x))
+  |        |       |           |      |         |
+ To     square  something,  multiply  it  by  itself.
+</code></pre>
+<p>We have here a <em>compound procedure</em>, which has been given the name
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>.  The procedure represents the operation of multiplying something
+by itself.  The thing to be multiplied is given a local name, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">x</mtext></mrow><annotation encoding="application/x-tex">\texttt{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord texttt">x</span></span></span></span></span>, which
+plays the same role that a pronoun plays in natural language.  Evaluating the
+definition creates this compound procedure and associates it with the name
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>.<sup><a href="#fn_12" id="reffn_12">12</a></sup></p>
+<p>The general form of a procedure definition is</p>
+<pre><code class="lang-scheme">(define (⟨<i>name</i>⟩ ⟨<i>formal parameters</i>⟩)
+  ⟨<i>body</i>⟩)
+</code></pre>
+<p>The ⟨<i>name</i>⟩ is a symbol to be associated with the procedure definition in
+the environment.<sup><a href="#fn_13" id="reffn_13">13</a></sup> The ⟨<i>formal parameters</i>⟩ are the names used within the body of the procedure to refer to
+the corresponding arguments of the procedure.  The ⟨<i>body</i>⟩ is an
+expression that will yield the value of the procedure application when the
+formal parameters are replaced by the actual arguments to which the procedure
+is applied.<sup><a href="#fn_14" id="reffn_14">14</a></sup>  The ⟨<i>name</i>⟩ and
+the ⟨<i>formal parameters</i>⟩ are grouped within parentheses, just as they
+would be in an actual call to the procedure being defined.</p>
+<p>Having defined <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>, we can now use it:</p>
+<pre><code class="lang-scheme">(square 21)
+<i>441</i>
+(square (+ 2 5))
+<i>49</i>
+(square (square 3))
+<i>81</i>
+</code></pre>
+<p>We can also use <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span> as a building block in defining other procedures.
+For example, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2 + y^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> can be expressed as</p>
+<pre><code class="lang-scheme">(+ (square x) (square y))
+</code></pre>
+<p>We can easily define a procedure <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span> that, given any two
+numbers as arguments, produces the sum of their squares:</p>
+<pre><code class="lang-scheme">(define (sum-of-squares x y)
+  (+ (square x) (square y)))
+(sum-of-squares 3 4)
+<i>25</i>
+</code></pre>
+<p>Now we can use <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span> as a building block in constructing
+further procedures:</p>
+<pre><code class="lang-scheme">(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+(f 5)
+<i>136</i>
+</code></pre>
+<p>Compound procedures are used in exactly the same way as primitive procedures.
+Indeed, one could not tell by looking at the definition of
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span> given above whether <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span> was built into the
+interpreter, like <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">+</mtext></mrow><annotation encoding="application/x-tex">\texttt{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5305em;"></span><span class="mord text"><span class="mord texttt">+</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">*</mtext></mrow><annotation encoding="application/x-tex">\texttt{*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5208em;"></span><span class="mord text"><span class="mord texttt">*</span></span></span></span></span>, or defined as a compound procedure.</p>
+<hr>
+<blockquote id="fn_12">
+<sup>12</sup>. Observe that there are two different operations being combined here: we are creating the procedure, and we are giving it the name <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>.  It is possible, indeed important, to be able to separate these two notions---to create procedures without naming them, and to give names to procedures that have already been created.  We will see how to do this in <a href="1.3.2_Constructing_Procedures_Using_lambda.md">Section 1.3.2</a>.<a href="#reffn_12" title="Jump back to footnote [12] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_13">
+<sup>13</sup>. Throughout this book, we will describe the general syntax of expressions by using italic symbols delimited by angle brackets---e.g., ⟨<i>name</i>⟩---to denote the “slots” in the expression to be filled in when such an expression is actually used.<a href="#reffn_13" title="Jump back to footnote [13] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_14">
+<sup>14</sup>. More generally, the body of the procedure can be a sequence of expressions.  In this case, the interpreter evaluates each expression in the sequence in turn and returns the value of the final expression as the value of the procedure application.<a href="#reffn_14" title="Jump back to footnote [14] in the text."> ↩</a>
+</blockquote>
 
                                 
                                 </section>
@@ -2268,12 +2256,12 @@ from <abbr title="DARPA">DARPA</abbr>, made possible by Bob Kahn.</p>
 
             
                 
-                <a href="Preface_to_the_First_Edition.html" class="navigation navigation-prev " aria-label="Previous page: Preface to the First Edition">
+                <a href="1.1.3_Evaluating_Combinations.html" class="navigation navigation-prev " aria-label="Previous page: 1.1.3 Evaluating Combinations">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1_Building_Abstractions_with_Procedures.html" class="navigation navigation-next " aria-label="Next page: 1 Building Abstractions with Procedures">
+                <a href="1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md" class="navigation navigation-next " aria-label="Next page: 1.1.5 The Substitution Model for Procedure Application">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2284,7 +2272,7 @@ from <abbr title="DARPA">DARPA</abbr>, made possible by Bob Kahn.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Acknowledgments","level":"1.8","depth":1,"next":{"title":"1 Building Abstractions with Procedures","level":"1.9","depth":1,"path":"1_Building_Abstractions_with_Procedures.md","ref":"1_Building_Abstractions_with_Procedures.md","articles":[{"title":"1.1 The Elements of Programming","level":"1.9.1","depth":2,"path":"1.1_The_Elements_of_Programming.md","ref":"1.1_The_Elements_of_Programming.md","articles":[{"title":"1.1.1 Expressions","level":"1.9.1.1","depth":3,"path":"1.1.1_Expressions.md","ref":"1.1.1_Expressions.md","articles":[]},{"title":"1.1.2 Naming and the Environment","level":"1.9.1.2","depth":3,"path":"1.1.2_Naming_and_the_Environment.md","ref":"1.1.2_Naming_and_the_Environment.md","articles":[]},{"title":"1.1.3 Evaluating Combinations","level":"1.9.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},{"title":"1.1.4 Compound Procedures","level":"1.9.1.4","depth":3,"path":"1.1.4_Compound_Procedures.md","ref":"1.1.4_Compound_Procedures.md","articles":[]},{"title":"1.1.5 The Substitution Model for Procedure Application","level":"1.9.1.5","depth":3,"path":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","articles":[]},{"title":"1.1.6 Conditional Expressions and Predicates","level":"1.9.1.6","depth":3,"path":"1.1.6_Conditional_Expressions_and_Predicates.md","ref":"1.1.6_Conditional_Expressions_and_Predicates.md","articles":[]},{"title":"1.1.7 Example: Square Roots by Newton’s Method","level":"1.9.1.7","depth":3,"path":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","ref":"1.1.7_Example_Square_Roots_by_Newtons_Method.md","articles":[]},{"title":"1.1.8 Procedures as Black-Box Abstractions","level":"1.9.1.8","depth":3,"path":"1.1.8_Procedures_as_Black_Box_Abstractions.md","ref":"1.1.8_Procedures_as_Black_Box_Abstractions.md","articles":[]}]},{"title":"1.2 Procedures and the Processes They Generate","level":"1.9.2","depth":2,"path":"1.2_Procedures_and_the_Processes_They_Generate.md","ref":"1.2_Procedures_and_the_Processes_They_Generate.md","articles":[{"title":"1.2.1 Linear Recursion and Iteration","level":"1.9.2.1","depth":3,"path":"1.2.1_Linear_Recursion_and_Iteration.md","ref":"1.2.1_Linear_Recursion_and_Iteration.md","articles":[]},{"title":"1.2.2 Tree Recursion","level":"1.9.2.2","depth":3,"path":"1.2.2_Tree_Recursion.md","ref":"1.2.2_Tree_Recursion.md","articles":[]},{"title":"1.2.3 Orders of Growth","level":"1.9.2.3","depth":3,"path":"1.2.3_Orders_of_Growth.md","ref":"1.2.3_Orders_of_Growth.md","articles":[]},{"title":"1.2.4 Exponentiation","level":"1.9.2.4","depth":3,"path":"1.2.4_Exponentiation.md","ref":"1.2.4_Exponentiation.md","articles":[]},{"title":"1.2.5 Greatest Common Divisors","level":"1.9.2.5","depth":3,"path":"1.2.5_Greatest_Common_Divisors.md","ref":"1.2.5_Greatest_Common_Divisors.md","articles":[]},{"title":"1.2.6 Example: Testing for Primality","level":"1.9.2.6","depth":3,"path":"1.2.6_Example_Testing_for_Primality.md","ref":"1.2.6_Example_Testing_for_Primality.md","articles":[]}]},{"title":"1.3 Formulating Abstractions with Higher-Order Procedures","level":"1.9.3","depth":2,"path":"1.3_Formulating_Abstractions_with_Higher_Order_Procedures.md","ref":"1.3_Formulating_Abstractions_with_Higher_Order_Procedures.md","articles":[{"title":"1.3.1 Procedures as Arguments","level":"1.9.3.1","depth":3,"path":"1.3.1_Procedures_as_Arguments.md","ref":"1.3.1_Procedures_as_Arguments.md","articles":[]},{"title":"1.3.2 Constructing Procedures Using lambda","level":"1.9.3.2","depth":3,"path":"1.3.2_Constructing_Procedures_Using_lambda.md","ref":"1.3.2_Constructing_Procedures_Using_lambda.md","articles":[]},{"title":"1.3.3 Procedures as General Methods","level":"1.9.3.3","depth":3,"path":"1.3.3_Procedures_as_General_Methods.md","ref":"1.3.3_Procedures_as_General_Methods.md","articles":[]},{"title":"1.3.4 Procedures as Returned Values","level":"1.9.3.4","depth":3,"path":"1.3.4_Procedures_as_Returned_Values.md","ref":"1.3.4_Procedures_as_Returned_Values.md","articles":[]}]}]},"previous":{"title":"Preface to the First Edition","level":"1.7","depth":1,"path":"Preface_to_the_First_Edition.md","ref":"Preface_to_the_First_Edition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Harold Abelson, Gerald Jay Sussman, Julie Sussman","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Structure and Interpretation of Computer Programs　Second Edition","language":"en","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"Acknowledgments.md","mtime":"2022-09-04T12:00:33.420Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-04T12:00:54.556Z"},"basePath":".","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"1.1.4 Compound Procedures","level":"1.9.1.4","depth":3,"next":{"title":"1.1.5 The Substitution Model for Procedure Application","level":"1.9.1.5","depth":3,"path":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md","articles":[]},"previous":{"title":"1.1.3 Evaluating Combinations","level":"1.9.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Harold Abelson, Gerald Jay Sussman, Julie Sussman","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Structure and Interpretation of Computer Programs　Second Edition","language":"en","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"1.1.4_Compound_Procedures.md","mtime":"2022-09-04T12:00:33.416Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-04T12:00:54.556Z"},"basePath":".","book":{"language":"en"}});
         });
     </script>
 </div>

@@ -3,7 +3,7 @@
 <html lang="ja" >
     <head>
         <meta charset="UTF-8">
-        <title>第一版~序文 · 計算機プログラムの構造と解釈 第二版</title>
+        <title>1.1.4 複合手続き · 計算機プログラムの構造と解釈 第二版</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.7.5">
@@ -56,10 +56,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Acknowledgments.html" />
+    <link rel="next" href="1.1.5_The_Substitution_Model_for_Procedure_Application.md" />
     
     
-    <link rel="prev" href="Preface_to_the_Second_Edition.html" />
+    <link rel="prev" href="1.1.3_Evaluating_Combinations.html" />
     
 
     </head>
@@ -194,7 +194,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.9" data-path="Preface_to_the_First_Edition.html">
+        <li class="chapter " data-level="1.9" data-path="Preface_to_the_First_Edition.html">
             
                 <a href="Preface_to_the_First_Edition.html">
             
@@ -287,7 +287,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.11.1.4" data-path="1.1.4_Compound_Procedures.html">
+        <li class="chapter active" data-level="1.11.1.4" data-path="1.1.4_Compound_Procedures.html">
             
                 <a href="1.1.4_Compound_Procedures.html">
             
@@ -2160,7 +2160,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >第一版~序文</a>
+        <a href="." >1.1.4 複合手続き</a>
     </h1>
 </div>
 
@@ -2175,18 +2175,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="第一版序文">第一版~序文</h1>
-<blockquote>
-<p>コンピュータはバイオリンのようなものです。次のような場面を想像してみてください。ある初心者の人が、まず蓄音機を動かしてみて、それから次にバイオリンを触ってみます。その人は、バイオリンの音はひどいと言います。人間主義者たちや多くの計算機科学者から私たちが聞く話はそういったものです。コンピュータのプログラムは特定の目的にはよいが、柔軟ではないと。バイオリンやタイプライターだってそんなものです。使い方を学ばなければの話ですが。</p>
-<p>---Marvin Minsky, “Why Programming Is a Good Medium for Expressing Poorly-Understood and Sloppily-Formulated Ideas”</p>
+                                <h3 id="114-複合手続き"><span class="chapnum">1.1.4</span> 複合手続き</h3>
+<p>ここまでで、強力なプログラミング言語であれば必ず持っているようないくつかの要素について、それがLispにもあることを見てきました。</p>
+<ul>
+<li>数値は基本データで、算術演算は基本手続きである。</li>
+<li>組み合わせをネストすることで、演算を組み合わせることができる。</li>
+<li>定義は名前と値を関連づけ、抽象化のためにある程度役に立つ。</li>
+</ul>
+<p>ここでは、<strong>手続きの定義</strong>(<em>procedure definition</em>)について学びます。これははるかに強力な抽象化のテクニックで、複合演算に名前をつけ、それにひとつの単位として参照できるようにするというものです。</p>
+<p>まずは、“二乗の計算”とはどのように表現できるかを考えてみましょう。例えば、“何かを二乗するには、その何かにその何か自身をかける”のようになるでしょう。これは、私たちの言語では次のように表すことができます。</p>
+<pre><code class="lang-scheme">(define (square x) (* x x))
+</code></pre>
+<p>これは、次のように理解できます。</p>
+<pre><code class="lang-scheme">(define (square    x)         (*      x         x))
+  |        |       |           |      |         |
+ 定義    二乗する  xを       かける  xを       xで.
+</code></pre>
+<p>ここでは、<strong>複合手続き</strong>(<em>compound procedure</em>)を作り、それに<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>という名前をつけています。この手続きは、何かにそれ自身をかけるという演算を表しています。かける数には<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">x</mtext></mrow><annotation encoding="application/x-tex">\texttt{x}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord text"><span class="mord texttt">x</span></span></span></span></span>という名前をつけていますが、これは自然言語で代名詞が果たすのと同じ役割を果たしています。この定義を評価すると、この複合手続きを作成し、それを<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>という名前と関連づけています。<sup><a href="#fn_12" id="reffn_12">12</a></sup></p>
+<p>手続き定義の一般形式は以下の通りです。</p>
+<pre><code class="lang-scheme">(define (<i>⟨名前⟩</i> <i>⟨仮引数⟩</i>)
+  <i>⟨本体⟩</i>)
+</code></pre>
+<p>⟨<i>名前</i>⟩は、環境の中で手続きに関連づける記号です。<sup><a href="#fn_13" id="reffn_13">13</a></sup>⟨<i>仮引数</i>⟩は、手続きの本体の中で対応する引数を参照するために使う名前です。⟨<i>本体</i>⟩は、その中に出てくる仮引数をその手続きが適用される実際の引数で置き換えた場合に、手続き適用後の値を返すような式です。<sup><a href="#fn_14" id="reffn_14">14</a></sup>⟨<i>名前</i>⟩と⟨<i>仮引数</i>⟩は、定義する手続きを実際に呼び出すときと同じように、括弧でくくります。</p>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>を定義したので、もうそれを使うことができます。</p>
+<pre><code class="lang-scheme">(square 21)
+<i>441</i>
+(square (+ 2 5))
+<i>49</i>
+(square (square 3))
+<i>81</i>
+</code></pre>
+<p><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>は、ほかの手続きを定義するための構成部品として使うこともできます。例えば、 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^2 + y^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0085em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>は次のように表現できます。</p>
+<pre><code class="lang-scheme">(+ (square x) (square y))
+</code></pre>
+<p>二つの数値が引数として与えられたときにその二乗の和を求める<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span>という手続きも、簡単に定義できます。</p>
+<pre><code class="lang-scheme">(define (sum-of-squares x y)
+  (+ (square x) (square y)))
+(sum-of-squares 3 4)
+<i>25</i>
+</code></pre>
+<p>これで、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span>をさらに別の手続きの構成部品として使うこともできるようになります。</p>
+<pre><code class="lang-scheme">(define (f a)
+  (sum-of-squares (+ a 1) (* a 2)))
+(f 5)
+<i>136</i>
+</code></pre>
+<p>複合手続きは、基本手続きとまったく同じように使うことができます。実際、上に書いた<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">sum-of-squares</mtext></mrow><annotation encoding="application/x-tex">\texttt{sum-of-squares}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">sum-of-squares</span></span></span></span></span>の定義を見ても、<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>が<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">+</mtext></mrow><annotation encoding="application/x-tex">\texttt{+}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5305em;"></span><span class="mord text"><span class="mord texttt">+</span></span></span></span></span>や<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">*</mtext></mrow><annotation encoding="application/x-tex">\texttt{*}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5208em;"></span><span class="mord text"><span class="mord texttt">*</span></span></span></span></span>のような組み込み手続きなのか、複合手続きとして定義されたものなのか、見分けることはできないはずです。</p>
+<hr>
+<blockquote id="fn_12">
+<sup>12</sup>. ここで、二つの異なる操作が組み合わされていることに気をつけてください。まず手続きを作成して、それに<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext mathvariant="monospace">square</mtext></mrow><annotation encoding="application/x-tex">\texttt{square}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6528em;vertical-align:-0.2222em;"></span><span class="mord text"><span class="mord texttt">square</span></span></span></span></span>という名前をつけています。手続きを名前をつけずに作るということと、すでに作られている手続きに名前をつけることということの、二つの概念を区別することは可能であり、重要なことでもあります。そのやり方については<a href="1.3.2_Constructing_Procedures_Using_lambda.md">1.3.2節</a>で見ていきます。<a href="#reffn_12" title="Jump back to footnote [12] in the text."> ↩</a>
 </blockquote>
-<p>“The Structure and Interpretation of Computer Programs”(SICP, 計算機プログラムの構造と解釈)はマサチューセッツ工科大学(MIT)での入門者レベルの計算機科学の科目です。<abbr title="MIT">MIT</abbr>で電気工学や計算機工学を専攻する学生はすべて、4つある“共通コアカリキュラム”のひとつとして履修しなければなりません。残りは、回路と線形システムについての科目2つと、デジタルシステム設計の科目ひとつです。私たちは、この科目の開発に1978年から携わってきました。そして、1980年の秋からは、この教材の現在の形で毎年600人から700人の学生を教えてきています。ほとんどの学生はコンピュータについてそれまでまったく秩序立ったトレーニングを受けていないか、受けていてもわずかなものでした。とはいえ、コンピュータでちょっと遊んだことのある学生は多くいましたし、プログラミングやハードウェア設計に相当な経験のある学生も数人はいましたが。</p>
-<p>私たちがこの計算機科学の入門科目の授業計画を策定するにあたって、二つの懸念点を内容に反映させました。一つ目は、コンピュータ言語はただコンピュータに操作を実行させる方法であるにとどまらず、方法論についての考え方を表現するための今までにない形式的媒体であるという考え方を打ち立てたいということでした。ですから、プログラムは人間が読めるように書かなくてはならず、それがたまたま機械によって実行できるというだけのことです。二つ目は、私たちがこのレベルの科目で扱われるべき中心的な題材について信じていることです。教えるべきはことは、特定のプログラミング言語の文法ではなく、また特定の関数を計算するための賢いアルゴリズムでもなく、さらに言うとアルゴリズムの数学的解析やコンピューティングの基礎ですらなく、重要なのは大きなソフトウェアシステムの知的複雑性をコントロールする技術であるということです。</p>
-<p>私たちの目標は、この科目を修了した学生たちが、プログラミングのスタイルと美学について、基礎的な感覚を十分に身につけてくれることです。学生たちが、大きなシステムの複雑性をコントロールするための主要な技術を使いこなせるようになること。模範的なスタイルで書かれていれば、50ページにわたるプログラムでも読めるようになっていること。どんなときにも、何を読むべきでないか、何を理解しないでもいいかを判断できるようになること。また、プログラムを変更するにあたって、自信を持って、元の作者の意図とスタイルを保ったままで変更を加えることができるようになっていること。</p>
-<p>これらのスキルは、決してコンピュータプログラミングに特有のものではありません。私たちが教え、また利用する技術は、すべての工学的設計に共通するものです。私たちは、詳細な部分を隠す抽象化を適宜加えることによって、複雑性をコントロールします。私たちは、共通のインターフェイスを確立し、標準的かつ中身のよくわかっている部品を「うまく組み合わせる」やり方で、複雑性をコントロールします。私たちは、設計を記述するためにさまざまな言語を作り出し、それぞれの言語が設計のある特定の側面を際立たせ、それ以外の側面を目立たなくさせることによって、複雑性をコントロールします。</p>
-<p>私たちのこの科目に対するアプローチの底にあるものは、“計算機科学”は科学ではなく、その意義はコンピュータとほとんど関係がないという信念です。コンピュータ革命とは、私たちの考え方と、考えを表現するやり方の革命です。この変化を象徴する出来事は、<strong>手続き的認識論</strong>(<em>procedural epistemology</em>)---古典的な数学的テーマで取られるような宣言的な見方ではなく、命令的な見方による知識構造の研究---の出現でしょう。数学は、“何であるか”という考えについて正確に扱う枠組みを提供します。計算機科学は、“どうやるか”という考えについて正確に扱う枠組みを提供します。</p>
-<p>この教材では、プログラミング言語Lispのひとつの方言を使います。言語を正式に教えることはしません。その必要がないからです。普通に使っていくだけで、数日のうちに学生は身につけます。これはLisp系の言語の大きな利点です。複合式を作るやり方は少ししかなく、構文構造はあってないようなものです。形式的な性質はすべて、チェスのルールのように、一時間もあればカバーできます。少ししたら、言語の構文的な詳細について忘れてしまい(元からそんなものはないので)、実際の問題---何を計算したいのか、どうやって問題を扱えるサイズの部品に分解するか、それらの部品をどのように作っていくか---に取り組むことになります。もうひとつのLispの利点は、私たちの知る限りほかのどんな言語よりも、プログラムをモジュールに分解する大規模な戦略をサポートしてくれる(しかし強制はしない)というところです。手続きやデータによる抽象化をしたり、よくある使い方のパターンを捉えるために高階関数を使ったり、代入とデータ変更によって局所状態をモデル化したり、ストリームと遅延評価によってプログラムの部品同士を連携させたりといったことが可能です。さらに、組み込み言語の実装も簡単にできます。また、これらすべては、漸進的なプログラム設計、構築、テスト、デバッグに対する優れたサポートを提供する対話的環境に埋め込まれています。これまでにないパワーと優美さを備えたすばらしいツールを作り上げたJohn McCarthyをはじめ、これまでのすべての世代のLispウィザードたちに感謝の気持ちを捧げます。</p>
-<p>私たちが使うLispの方言であるSchemeは、LispとAlgolのパワーと優美さをひとつにまとめようとしたものです。Lispからは、シンプルな構文によるメタ言語的なパワー、プログラムをデータオブジェクトとして表す統一的なやり方、ガベージコレクションつきヒープへのデータ割り当てが取り込まれています。Algolからは、レキシカルスコープとブロック構造を取り込んでいます。これらは、Algol委員会のプログラミング言語設計の先駆者たちからの贈り物です。チャーチのλ計算とプログラミング言語の構造との間の関係についての洞察はJohn ReynoldsとPeter Landinによるものです。また、コンピュータが世界に現れる何十年も前からこの領域を探索してきた数学者たちに対する恩義も感じています。彼ら開拓者たちには、Alonzo Church, Barkley Rosser, Stephen Kleene, Haskell Curryなどが含まれます。</p>
+<blockquote id="fn_13">
+<sup>13</sup>. この本全体を通して、式の一般的な構文について記述する際には、山括弧でくくったイタリックの記号---例えば、⟨<i>name</i>⟩---を使って、それらの式を実際に使うときに埋めなければならない“スロット”を表します。<a href="#reffn_13" title="Jump back to footnote [13] in the text."> ↩</a>
+</blockquote>
+<blockquote id="fn_14">
+<sup>14</sup>. もう少し一般化な言い方をすると、手続きの本体は式の列にもなりえます。その場合、インタプリタは列のそれぞれの式を順番に評価し、最後の式の値を手続き適用の値として返します。<a href="#reffn_14" title="Jump back to footnote [14] in the text."> ↩</a>
+</blockquote>
 
                                 
                                 </section>
@@ -2214,12 +2258,12 @@
 
             
                 
-                <a href="Preface_to_the_Second_Edition.html" class="navigation navigation-prev " aria-label="Previous page: 第二版~序文">
+                <a href="1.1.3_Evaluating_Combinations.html" class="navigation navigation-prev " aria-label="Previous page: 1.1.3 組み合わせの評価">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Acknowledgments.html" class="navigation navigation-next " aria-label="Next page: 謝辞">
+                <a href="1.1.5_The_Substitution_Model_for_Procedure_Application.md" class="navigation navigation-next " aria-label="Next page: 1.1.5 手続き適用の置換モデル">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -2230,7 +2274,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一版~序文","level":"1.9","depth":1,"next":{"title":"謝辞","level":"1.10","depth":1,"path":"Acknowledgments.md","ref":"Acknowledgments.md","articles":[]},"previous":{"title":"第二版~序文","level":"1.8","depth":1,"path":"Preface_to_the_Second_Edition.md","ref":"Preface_to_the_Second_Edition.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ハル・アベルソン、ジェラルド・ジェイ・サスマン、ジュリー・サスマン著 -- 真鍋宏史訳","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"IPAGothic","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"計算機プログラムの構造と解釈 第二版","language":"ja","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"Preface_to_the_First_Edition.md","mtime":"2022-09-04T12:00:33.420Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-04T12:00:54.556Z"},"basePath":".","book":{"language":"ja"}});
+            gitbook.page.hasChanged({"page":{"title":"1.1.4 複合手続き","level":"1.11.1.4","depth":3,"next":{"title":"1.1.5 手続き適用の置換モデル","level":"1.11.1.5","depth":3,"path":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","ref":"1.1.5_The_Substitution_Model_for_Procedure_Application.md","articles":[]},"previous":{"title":"1.1.3 組み合わせの評価","level":"1.11.1.3","depth":3,"path":"1.1.3_Evaluating_Combinations.md","ref":"1.1.3_Evaluating_Combinations.md","articles":[]},"dir":"ltr"},"config":{"plugins":["i18nsettings","fontsettings","katex-pro","-search","search-pro-fixed","mermaid-newface"],"root":"./","styles":{"website":"styles/website.css"},"pluginsConfig":{"i18nsettings":{"language":"ja","languages":[{"config":"ja","text":"日本語"},{"config":"en","text":"English"}]},"fontsettings":{"theme":"white","family":"sans","size":2},"katex-pro":{},"search-pro-fixed":{},"mermaid-newface":{},"highlight":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"ハル・アベルソン、ジェラルド・ジェイ・サスマン、ジュリー・サスマン著 -- 真鍋宏史訳","pdf":{"pageNumbers":true,"fontSize":14,"fontFamily":"IPAGothic","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"計算機プログラムの構造と解釈 第二版","language":"ja","links":{"sidebar":{}},"gitbook":"*","publisher":""},"file":{"path":"1.1.4_Compound_Procedures.md","mtime":"2022-09-04T12:00:33.420Z","type":"markdown"},"gitbook":{"version":"3.7.5","time":"2022-09-04T12:00:54.556Z"},"basePath":".","book":{"language":"ja"}});
         });
     </script>
 </div>
