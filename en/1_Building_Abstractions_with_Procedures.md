@@ -51,7 +51,7 @@ their programs.  Well-designed computational systems, like well-designed
 automobiles or nuclear reactors, are designed in a modular manner, so that the
 parts can be constructed, replaced, and debugged separately.
 
-\subsubsection*{Programming in Lisp}
+## Programming in Lisp
 
 We need an appropriate language for describing processes, and we will use for
 this purpose the programming language Lisp.  Just as our everyday thoughts are
@@ -62,17 +62,14 @@ Lisp was invented in the late 1950s as a formalism for reasoning about the use
 of certain kinds of logical expressions, called _recursion equations_,
 as a model for computation.  The language was conceived by John McCarthy and is
 based on his paper “Recursive Functions of Symbolic Expressions and Their
-Computation by Machine” ((References.md#McCarthy 1960)).
+Computation by Machine” ([McCarthy 1960](References.md#McCarthy-1960)).
 
 Despite its inception as a mathematical formalism, Lisp is a practical
 programming language.  A Lisp _interpreter_ is a machine that carries
 out processes described in the Lisp language.  The first Lisp interpreter was
 implemented by McCarthy with the help of colleagues and students in the
 Artificial Intelligence Group of the <abbr title="MIT">MIT</abbr> Research Laboratory of
-Electronics and in the <abbr title="MIT">MIT</abbr> Computation Center.\footnote{The
-_Lisp 1 Programmer's Manual_ appeared in 1960, and the _Lisp 1.5
-Programmer's Manual_ ((References.md#McCarthy et al. 1965)) was published in 1962.  The early history
-of Lisp is described in (References.md#McCarthy 1978).}  Lisp, whose name is an acronym for
+Electronics and in the <abbr title="MIT">MIT</abbr> Computation Center.[^1] Lisp, whose name is an acronym for
 LISt Processing, was designed to provide symbol-manipulating capabilities for
 attacking programming problems such as the symbolic differentiation and
 integration of algebraic expressions.  It included for this purpose new data
@@ -90,43 +87,19 @@ use today (only Fortran is older), to continually adapt to encompass the most
 modern ideas about program design.  Thus, Lisp is by now a family of dialects,
 which, while sharing most of the original features, may differ from one another
 in significant ways.  The dialect of Lisp used in this book is called
-Scheme.\footnote{The two dialects in which most major Lisp programs of the
-1970s were written are MacLisp ((References.md#Moon 1978); (References.md#Pitman 1983)), developed at the
-<abbr title="MIT">MIT</abbr> Project <abbr title="MAC">MAC</abbr>, and Interlisp ((References.md#Teitelman 1974)), developed
-at Bolt Beranek and Newman Inc. and the Xerox Palo Alto Research Center.
-Portable Standard Lisp ((References.md#Hearn 1969); (References.md#Griss 1981)) was a Lisp dialect designed to
-be easily portable between different machines.  MacLisp spawned a number of
-subdialects, such as Franz Lisp, which was developed at the University of
-California at Berkeley, and Zetalisp ((References.md#Moon and Weinreb 1981)), which was based on a
-special-purpose processor designed at the <abbr title="MIT">MIT</abbr> Artificial Intelligence
-Laboratory to run Lisp very efficiently.  The Lisp dialect used in this book,
-called Scheme ((References.md#Steele and Sussman 1975)), was invented in 1975 by Guy Lewis Steele Jr. and
-Gerald Jay Sussman of the <abbr title="MIT">MIT</abbr> Artificial Intelligence Laboratory and
-later reimplemented for instructional use at <abbr title="MIT">MIT</abbr>.  Scheme became an
-<abbr title="IEEE">IEEE</abbr> standard in 1990 ((References.md#IEEE 1990)).  The Common Lisp dialect
-((References.md#Steele 1982), (References.md#Steele 1990)) was developed by the Lisp community to combine
-features from the earlier Lisp dialects to make an industrial standard for
-Lisp.  Common Lisp became an <abbr title="ANSI">ANSI</abbr> standard in 1994 ((References.md#ANSI 1994)).}
+Scheme.[^2]
 
 Because of its experimental character and its emphasis on symbol manipulation,
 Lisp was at first very inefficient for numerical computations, at least in
 comparison with Fortran.  Over the years, however, Lisp compilers have been
 developed that translate programs into machine code that can perform numerical
 computations reasonably efficiently.  And for special applications, Lisp has
-been used with great effectiveness.\footnote{One such special application was a
-breakthrough computation of scientific importance---an integration of the
-motion of the Solar System that extended previous results by nearly two orders
-of magnitude, and demonstrated that the dynamics of the Solar System is
-chaotic.  This computation was made possible by new integration algorithms, a
-special-purpose compiler, and a special-purpose computer all implemented with
-the aid of software tools written in Lisp ((References.md#Abelson et al. 1992); (References.md#Sussman and Wisdom 1992)).}
+been used with great effectiveness.[^3]
 Although Lisp has not yet overcome its old reputation as
 hopelessly inefficient, Lisp is now used in many applications where efficiency
 is not the central concern.  For example, Lisp has become a language of choice
 for operating-system shell languages and for extension languages for editors
 and computer-aided design systems.
-
-\enlargethispage{\baselineskip}
 
 If Lisp is not a mainstream language, why are we using it as the framework for
 our discussion of programming?  Because the language possesses unique features
@@ -148,8 +121,8 @@ Above and beyond these considerations, programming in Lisp is great fun.
 
 ---
 
-[^1]: _Lisp 1 Programmer's Manual_は1960年に登場し、_Lisp 1.5 Programmer's Manual_ ([McCarthy et al. 1965](References.md#McCarthy-et-al-1965))は1962年に出版されました。Lispの初期の歴史は、[McCarthy 1978](References.md#McCarthy-1978)で説明されています。
+[^1]: The_Lisp 1 Programmer's Manual_ appeared in 1960, and the _Lisp 1.5Programmer's Manual_ ([McCarthy et al. 1965](References.md#McCarthy-et-al-1965)) was published in 1962.  The early historyof Lisp is described in [McCarthy 1978](References.md#McCarthy-1978).
 
-[^2]: 1970年代に主要なLispプログラムの大部分に用いられた2つの方言は、<abbr title="MIT">MIT</abbr>のプロジェクト<abbr title="MAC">MAC</abbr>で開発されたMacLisp ([Moon 1978](References.md#Moon-1978); [Pitman 1983](References.md#Pitman-1983))と、Bolt Beranek and Newman Inc.とXerox Palo Alto研究センターで開発されたInterlisp ([Teitelman 1974](References.md#Teitelman-1974))でした。Portable Standard Lisp ([Hearn 1969](References.md#Hearn-1969);[Griss 1981](References.md#Griss-1981))、異なるマシンの間で簡単に移植できるように設計されたLisp方言です。MacLispは、カリフォルニア大学バークレー校で開発されたFranz Lispや、<abbr title="MIT">MIT</abbr>人工知能研究所がLispをとても効率よく実行できるよう設計した特定目的プロセッサ(処理器)に基づくZetalisp ([Moon and Weinreb 1981](References.md#Moon-and-Weinreb-1981))といった、いくつかの下位方言を生みました。この本で使用するLisp方言はSheme([Steele and Sussman 1975](References.md#Steele-and-Sussman-1975))と呼ばれ、1975年に<abbr title="MIT">MIT</abbr>人工知能研究所のGuy Lewis Steele Jr.とGerald Jay Sussmanにより開発され、のちに<abbr title="MIT">MIT</abbr>で教育目的で再実装されたものです。Common Lisp方言([Steele 1982](References.md#Steele-1982), [Steele 1990](References.md#Steele-1990))は、初期のLisp方言の機能を組み合わせ、Lispの業界標準を作るためにLispコミュニティにより開発されました。Common Lispは1994年に<abbr title="ANSI">ANSI</abbr>標準([ANSI 1994](References.md#ANSI-1994))になりました。
+[^2]: The two dialects in which most major Lisp programs of the1970s were written are MacLisp ([Moon 1978](References.md#Moon-1978); [Pitman 1983](References.md#Pitman-1983)), developed at the<abbr title="MIT">MIT</abbr> Project <abbr title="MAC">MAC</abbr>, and Interlisp ([Teitelman 1974](References.md#Teitelman-1974)), developedat Bolt Beranek and Newman Inc. and the Xerox Palo Alto Research Center.Portable Standard Lisp ([Hearn 1969](References.md#Hearn-1969); [Griss 1981](References.md#Griss-1981)) was a Lisp dialect designed tobe easily portable between different machines.  MacLisp spawned a number ofsubdialects, such as Franz Lisp, which was developed at the University ofCalifornia at Berkeley, and Zetalisp ([Moon and Weinreb 1981](References.md#Moon-and-Weinreb-1981)), which was based on aspecial-purpose processor designed at the <abbr title="MIT">MIT</abbr> Artificial IntelligenceLaboratory to run Lisp very efficiently.  The Lisp dialect used in this book,called Scheme ([Steele and Sussman 1975](References.md#Steele-and-Sussman-1975)), was invented in 1975 by Guy Lewis Steele Jr. andGerald Jay Sussman of the <abbr title="MIT">MIT</abbr> Artificial Intelligence Laboratory andlater reimplemented for instructional use at <abbr title="MIT">MIT</abbr>.  Scheme became an<abbr title="IEEE">IEEE</abbr> standard in 1990 ([IEEE-1990](References.md#IEEE 1990)).  The Common Lisp dialect([Steele 1982](References.md#Steele-1982), [Steele 1990](References.md#Steele-1990)) was developed by the Lisp community to combinefeatures from the earlier Lisp dialects to make an industrial standard forLisp.  Common Lisp became an <abbr title="ANSI">ANSI</abbr> standard in 1994 ([ANSI 1994](References.md#ANSI-1994)).
 
-[^3]: そのような特別な応用のひとつは、自然科学的に重要な計算のブレークスルー---太陽系の運動についての積分の精度を二桁近く上げ、太陽系の力学はカオス的であることを示した---でした。この計算は、新しい積分アルゴリズム、専用コンパイラ、そして専用コンピュータによるものですが、これらはすべてLispによって書かれたソフトウェアツールの助けによって実装されたものです。([Abelson et al. 1992](References.md#Abelson-et-al.-1992); [Sussman and Wisdom 1992](References.md#Sussman-and-Wisdom-1992))
+[^3]: One such special application was abreakthrough computation of scientific importance---an integration of themotion of the Solar System that extended previous results by nearly two ordersof magnitude, and demonstrated that the dynamics of the Solar System ischaotic.  This computation was made possible by new integration algorithms, aspecial-purpose compiler, and a special-purpose computer all implemented withthe aid of software tools written in Lisp ([Abelson et al. 1992](References.md#Abelson-et-al-1992); [Sussman and Wisdom 1992](References.md#Sussman-and-Wisdom-1992)).

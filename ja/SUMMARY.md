@@ -28,7 +28,7 @@
     * [1.2.6 例: 素数判定](1.2.6_Example_Testing_for_Primality.md)
   * [1.3 高階手続きによる抽象の定式化](1.3_Formulating_Abstractions_with_Higher_Order_Procedures.md)
     * [1.3.1 引数としての手続き](1.3.1_Procedures_as_Arguments.md)
-    * [1.3.2 \code{lambda}を使って手続きを構築する](1.3.2_Constructing_Procedures_Using_lambda.md)
+    * [1.3.2 $\texttt{lambda}$を使って手続きを構築する](1.3.2_Constructing_Procedures_Using_lambda.md)
     * [1.3.3 汎用手法としての手続き](1.3.3_Procedures_as_General_Methods.md)
     * [1.3.4 返り値としての手続き](1.3.4_Procedures_as_Returned_Values.md)
 * [2 データを用いた抽象化の構築](2_Building_Abstractions_with_Data.md)
