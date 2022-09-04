@@ -1,5 +1,6 @@
 # Summary
 
+* [Title](README.md)
 * [Contents](SUMMARY.md)
 * [Unofficial Texinfo Format](Unofficial_Texinfo_Format.md)
 * [Dedication](Dedication.md)

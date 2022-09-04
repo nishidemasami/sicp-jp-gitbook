@@ -1,5 +1,6 @@
 # 目次
 
+* [表紙](README.md)
 * [目次](SUMMARY.md)
 * [非公式Texinfoフォーマット](Unofficial_Texinfo_Format.md)
 * [非公式日本語版](非公式日本語版.md)

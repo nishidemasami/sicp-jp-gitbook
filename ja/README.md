@@ -35,3 +35,33 @@
     <path d="m 640,452.36211 -50,0" id="path3038-6" style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;display:inline;enable-background:new"/>
   </g>
 </svg>
+
+©1996 by The Massachusetts Institute of Technology
+
+Structure and Interpretation of Computer Programs,  
+second edition
+
+Harold Abelson and Gerald Jay Sussman  
+with Julie Sussman, foreword by Alan J. Perlis
+
+
+![CC BY-NC-SA](../html/fig/cc-by-nc-sa_icon.svg "CC BY-NC-SA")
+
+This work is licensed under a Creative Commons  
+Attribution-NonCommercial-ShareAlike 3.0 Unported License  
+([<abbr title="CC BY-NC-SA">CC BY-NC-SA</abbr> 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)).
+Based on a work at [mitpress.mit.edu](http://mitpress.mit.edu/sicp/).
+
+The <abbr title="MIT">MIT</abbr> Press  
+Cambridge, Massachusetts  
+London, England
+
+McGraw-Hill Book Company  
+New York, St. Louis, San Francisco,  
+Montreal, Toronto
+
+Unofficial Texinfo Format [2.andresraba5.5](http://sicpebook.wordpress.com) (September 15, 2015),  
+based on [2.neilvandyke4](http://www.neilvandyke.org/sicp-texi/) (January 10, 2007).
+
+日本語： by [minghai](http://github.com/minghai/sicp-pdf/) based on 2.andresraba5.2 (March 31, 2014).  
+Decent Japanese version by [Hiroshi Manabe](http://github.com/hiroshi-manabe/sicp-pdf/) based on 2.andresraba5.2 (October 12, 2015).
