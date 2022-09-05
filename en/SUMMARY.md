@@ -14,7 +14,7 @@
     * [1.1.2 Naming and the Environment](1.1.2_Naming_and_the_Environment.md)
     * [1.1.3 Evaluating Combinations](1.1.3_Evaluating_Combinations.md)
     * [1.1.4 Compound Procedures](1.1.4_Compound_Procedures.md)
-    * [1.1.5 The Substitution Model for Procedure Application](1.1.5_1.1.1_The_Substitution_Model_for_Procedure_Application.md)
+    * [1.1.5 The Substitution Model for Procedure Application](1.1.5_The_Substitution_Model_for_Procedure_Application.md)
     * [1.1.6 Conditional Expressions and Predicates](1.1.6_Conditional_Expressions_and_Predicates.md)
     * [1.1.7 Example: Square Roots by Newton’s Method](1.1.7_Example_Square_Roots_by_Newtons_Method.md)
     * [1.1.8 Procedures as Black-Box Abstractions](1.1.8_Procedures_as_Black_Box_Abstractions.md)
