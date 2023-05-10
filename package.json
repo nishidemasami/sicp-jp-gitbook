@@ -13,7 +13,8 @@
   },
   "keywords": [],
   "license": "CC-BY-SA-4.0",
-  "dependencies": {},
+  "dependencies": {
+  },
   "devDependencies": {
     "gitbook-plugin-katex-pro": "^0.13.11",
     "gitbook-plugin-mermaid-newface": "^4.1.0",
