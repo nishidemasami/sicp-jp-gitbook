@@ -39,14 +39,6 @@ jobs:
         publish_branch: gh-pages
         publish_dir: _book/
 
-    - name: Release
-      uses: softprops/action-gh-release@v1
-      with:
-        name: pdfrelease
-        tag_name: pdf_relrase
-        generate_release_notes: true
-        files: target/hoge.jar
-
     - name: Generate PDF
       run: npx honkit pdf ./ ./output.pdf
 
@@ -55,3 +47,11 @@ jobs:
       with:
         name: documents
         path: ./output.pdf
+
+    - name: Release
+      uses: softprops/action-gh-release@v1
+      with:
+        name: pdf
+        tag_name: pdf_relrase
+        generate_release_notes: true
+        files: ./output.pdf
